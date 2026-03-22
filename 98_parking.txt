@@ -1,0 +1,66 @@
+PARKING
+
+AI QUICK NOTE
+
+- If you are using this file operationally, read the AI section at the end first.
+- For AI use, the AI section is the rule source for this file.
+- Do not derive rules from the human section if the AI section is present.
+
+What It Is For
+- This file holds what may still matter later, but does not matter now.
+- Put here things you do not want to lose, but that should not stay in the project's current live work.
+- It exists to remove weight from the present without deleting paths that may still become useful.
+
+What Goes Here
+- Suspended plans. They belong here because they may become useful again, but they are not helping now. If you place them here, you gain a lighter present.
+- Partial specs. They belong here because they are not alive enough to stay in current work, but you do not want to lose them. If you park them well, you gain continuity without noise.
+- Good ideas that are out of time. They belong here because this is not the right moment for them, even if they have value. If you place them here, you gain space without deleting them.
+- Paths you do not want to erase, but that should not stay in current work. They belong here because they are not closed, but they are not alive either. If you park them, you gain a more readable project.
+- Things that could become useful later, but are not helping now. They belong here because they should not weigh on the present. If you place them here, you gain less friction.
+
+What Does Not Go Here
+- Things still alive and still in play. Those belong in 05 because they still matter now. Otherwise you risk parking something only to avoid deciding. If you keep it in 05, you gain a more honest present.
+- Things that have already truly entered the work. Those belong in 03 because they are already part of the current live state. Otherwise you risk hiding real work in a side zone. If you place them in 03, you gain more clarity.
+- Decisions already taken. Those belong in 04 because they are already real choices. Otherwise you risk treating a decision as if it were still suspended. If you place it in 04, you gain a cleaner boundary.
+- Things that no longer matter at all. Those belong in 99 because their live role is closed. Otherwise you risk swelling 98 with finished things. If you place them in 99, you gain a more readable parking layer.
+
+Update It When
+- Something still makes sense, but it is not the right moment.
+- Keeping it in active flow would add weight without immediate value.
+- You want to preserve a path without making it look alive.
+- Something parked becomes useful again and should be reactivated elsewhere.
+- Something parked stops making sense and should be archived.
+
+Template
+- id: P-01
+- Title:
+- Why It Is Here:
+- links to:
+- external reference:
+- Next Step to Reactivate It:
+
+Local ID Rule
+- Local entries in 98 use only `P-xx`.
+- If you reference `D-xx`, `L-xx`, `F-xx`, or other external IDs, they remain references in `links to`; they do not become new local IDs.
+- If you need to cite useful files or material outside the canonical set, use `external reference`.
+
+Typical Errors
+- Using 98 as an elegant cemetery.
+- Parking things that are still alive just to avoid deciding.
+- Leaving an entry without a reactivation condition.
+- Using 98 to lighten the present instead of understanding where something truly belongs.
+
+AI SECTION
+
+- This file is not for current live work, active unresolved ideas, taken decisions, or dead historical material.
+- Write here only if the content could still matter later but should not affect current work now.
+- Read 98 as still useful but not active now.
+- Local entries in this file use only `P-xx`.
+- Cross-file IDs stay references in `links to`; they do not become new local IDs here.
+- Use `external reference` for useful references outside the canonical set.
+- If this content is still active, unresolved, or still shaping current choices, use 05.
+- If this content is already part of current live work, use 03.
+- If this content records a decision already taken, use 04.
+- If this content is no longer alive and should remain only as record, use 99.
+- Do not use 98 to avoid deciding where something belongs now.
+- If level, timing, or authority are unclear, stop and ask.

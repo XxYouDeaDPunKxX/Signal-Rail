@@ -1,0 +1,133 @@
+LATENT IDEAS
+
+AI QUICK NOTE
+
+- If you are using this file operationally, read the AI section at the end first.
+- For AI use, the AI section is the rule source for this file.
+- Do not derive rules from the human section if the AI section is present.
+
+What It Is For
+- This file keeps together what matters but has not yet found the right home.
+- Ideas, sparks, tensions, risks, or useful notes can enter here when they have not yet become live work, decision, parking, or archive.
+- If something matters but you do not yet know where to place it well, it usually goes here first.
+- 05 is not a storage bin for scattered text.
+- It works as an anti-stall buffer: it keeps what matters visible without promoting it too early.
+- Thanks to state, next step, and likely direction, the material here stays readable, recoverable, and absorbable.
+- If you have a spark, it enters here as new.
+- If it still holds when reread, it moves to the `to review` state.
+- When the direction tightens and the destination becomes clearer, it rises to to absorb and then exits toward the right container.
+
+What Goes Here
+- Strong ideas that are not yet closed. They belong here because they matter, but are not ready for another file yet. If you keep them well here, you gain time to clarify them.
+- Short sparks you do not want to lose. They belong here because they are still small but may become useful. If you collect them well, you gain continuity.
+- Still-ambiguous nodes. They belong here because they are not yet clear enough to move elsewhere. If you keep them visible, you gain less dispersion.
+- Useful pieces you already know matter, but you do not yet know where they should end up. They belong here because 05 exists to hold what weighs on the project but does not yet have a home. If you separate them well, you gain a more readable latent layer.
+- Things that are weighing on the project but are not yet clear enough to belong elsewhere. They belong here because they are not mature enough to be closed yet. If you leave them here until they clarify, you gain fewer forced moves.
+
+What Does Not Go Here
+- Things that have already truly entered current live work. That belongs in 03 because it is now part of the live present. Otherwise you risk leaving live work in the latent layer. If you place it in 03, you gain a more honest 05.
+- Decisions already taken and already in effect. That belongs in 04 because it is no longer open. Otherwise you risk leaving something closed in doubt. If you place it in 04, you gain a cleaner latent file.
+- Technical maps already closed enough: repos, key folders, entrypoints, sensitive surfaces, minimal runbook, or critical dependencies. That belongs in 08 because it is no longer merely latent; it is already a readable surface map. Otherwise you risk leaving a technical map in 05 after it already has a home. If you place it in 08, you gain a cleaner latent layer.
+- Things that are out of cycle but still useful. That belongs in 98 because it is not weighing now but may matter later. Otherwise you risk swelling 05 with things that are no longer live. If you place it in 98, you gain a more readable latent layer.
+- History, discarded material, closed material, or dead material. That belongs in 99 because it no longer belongs to live work. Otherwise you risk keeping dead things in motion. If you place it in 99, you gain less noise.
+- Whole files dropped in without extraction, except in truly justified special cases. That does not belong here because 05 is for keeping readable notes, not undifferentiated masses. Otherwise you risk losing what actually matters. If you extract well, you gain a much more useful file.
+
+Update It When
+- Something enters that matters but does not yet have a final home.
+- A note stops being vague and becomes readable.
+- A note matures enough to leave toward a more appropriate file.
+- A note stops being alive and should move out of here.
+
+How To Use It Well
+- Bring the single note here, not the whole file, except in special cases.
+- If one source contains pieces with different roles, separate them.
+- Every note should have at least one state and one next step.
+- Local entries in 05 use only `L-xx`.
+- If a note references a decision, a freeze, or another external ID, that reference belongs in `links to`, `origin`, or body text, not in the `id` field.
+- If a note needs to cite files or useful material outside the canonical set, use `external reference` instead of widening `links to`.
+- It is better to keep a still-alive note here than to promote it too early into the wrong container.
+- 05 also protects the project this way: routing errors are easier to correct than premature promotions.
+- If a note keeps weighing on the project, try to say what kind of file it seems to be moving toward: identity, freeze, live work, or decision.
+- If a note stops being only a hypothesis and becomes a readable technical map already, move it to 08.
+- If you think it trends toward freeze or decision, treat it as a sensitive case and ask for human validation.
+- AI-suggested evaluation does not count as authority until the user confirms it.
+
+Allowed States
+- new = it entered here but you do not understand it well yet
+- to review = you know it matters, but not yet enough to move it
+- to absorb = it is almost ready to leave this file
+- parked = you are not handling it now; if it stays out of cycle, move it out of this file
+- dead = it no longer matters as a live note; if you want to keep a trace, move it out of this file
+
+How To Tell Whether A Note Holds
+- Ask whether it really moves something or not.
+- Ask whether it is still uncertain.
+- Ask whether it adds something or only repeats more elegantly what is already clear.
+- Ask whether it has a minimum next move.
+- If you cannot say why it matters or where it could go, you probably have not written it well enough yet.
+
+Sparks
+- Use "spark" for a short trace, a small intuition, or a light grip point.
+- A spark can still be useful even if it is not yet a strong thesis.
+
+Spark Template
+- id: L-xx
+- Title: Short readable name.
+- Origin: Where it comes from.
+- Why It Matters: Why you do not want to lose it right now.
+- Possible Destination: live work, decision, parking, archive, or still here.
+- Likely Direction: identity, freeze, live work, decision, or still unclear.
+- State: new, to review, to absorb, parked, dead.
+- `links to`: nearby sources or nodes.
+- `external reference`: useful files or references outside the canonical set.
+- Next Step: The minimum move that keeps it from staying still.
+- Reopening Trigger: When it would become central again.
+
+Ideas
+- Use "idea" when there is already a stronger thesis or a more complete shape.
+- An idea in 05 is not yet a decision: it is something serious that still needs to be clarified, stress-tested, or moved into the right file.
+
+Idea Template
+- id: L-xx
+- Title: Short clear formulation.
+- Thesis: The live sentence of the idea.
+- Why It Is Strong: What leverage it could give the project.
+- Where It Touches the Project: Which parts it really moves.
+- What Is Still Missing: What is not yet closed enough.
+- Likely Direction: identity, freeze, live work, decision, or still unclear.
+- State: new, to review, to absorb, parked, dead.
+- `links to`: connected sources, decisions, or project parts.
+- `external reference`: useful files or references outside the canonical set.
+- If It Matures, Where It Would Go: live work, decision, parking, archive, or still unclear.
+- Next Step: What to do to make it move forward.
+- Reopening Trigger: What would need to happen to make it urgent again.
+
+Typical Errors
+- Leaving things here for months without rereading them.
+- Keeping here material that has already become live work or decision.
+- Using 05 so you never have to decide.
+- Treating a note as strong just because it is well written.
+- Treating an AI evaluation as final without human validation.
+
+AI SECTION
+
+- This file is not for project identity, stable project constants, decisions already taken, current live work, parked material, or archived history.
+- Write here only if the content matters but does not yet have a final home: it is still alive, still unresolved, and not yet stable enough for 03, 04, 98, or 99.
+- Read this file as the mobile layer of the project: the material still has motion, weight, or possible destination, but not enough structural stability yet.
+- Local entries in this file use only `L-xx`.
+- Cross-file IDs stay references in `links to`, `origin`, or body text; they do not become new local IDs here.
+- Use `external reference` for useful references outside the canonical set or outside the local surface.
+- If this content defines what the project is or how it should be understood, use 01.
+- If this content defines a stable project constant, use 02.
+- If this content is already guiding current live work, use 03.
+- If this content records a decision that has already clearly won, use 04.
+- If this content already maps technical surface, entrypoints, sensitive surfaces, minimal runbook, or critical env/deps, use 08.
+- If this content exists mainly to support handoff, re-entry, or continuity between sessions, use 09.
+- If this content is not active now but could still matter later, use 98.
+- If this content is no longer alive and should remain only as record, use 99.
+- Do not keep content here just because it sounds important, elegant, or likely. Keep it here only while it is still alive and unresolved.
+- If the destination is not clear enough yet, keep the note alive here and narrow it further before forcing promotion.
+- Use 05 to delimit, prepare, and keep pressure visible without crossing authority too early.
+- Prefer keeping still-alive content here over promoting it too early into the wrong canonical file.
+- Prefer recoverable routing delay over premature canonical promotion.
+- If level, timing, or authority are unclear, stop and ask.

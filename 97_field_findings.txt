@@ -1,0 +1,118 @@
+FIELD FINDINGS
+
+AI QUICK NOTE
+
+- If you are using this file operationally, read the AI section at the end first.
+- For AI use, the AI section is the rule source for this file.
+- Do not derive rules from the human section if the AI section is present.
+
+What It Is
+- This file keeps together useful findings that emerge during real work before they are lost, misread, or promoted too early.
+- It is a lateral, non-canonical support file.
+- It does not hold project truth.
+- It exists to keep findings readable while they are still being observed, compared, filtered, or discarded.
+- It is not a second working surface for the project.
+- It is where findings can be kept without forcing them too early into the wrong container.
+
+What Goes Here
+- real observed problems
+- small concrete refinements
+- signals of ambiguity, risk, or possible recurrence
+- seeds worth preserving before promotion
+- local findings that may reveal a wider pattern but are not yet proven
+
+What Does Not Go Here
+- canonical project truth
+- current live work, taken decisions, or unresolved project material already alive enough for a canonical container
+- technical surface authority, continuity memory, parked material, or archive memory
+- full conversation logs, brainstorming dumps, or redesign pads
+- anything that replaces a canonical or support container already present in Signal Rail
+
+Categories
+- BUG
+  Use BUG when a real problem has already emerged in a concrete and observable way.
+
+- REFINEMENT
+  Use REFINEMENT when a small improvement is already concrete enough to be discussed as a local move.
+
+- SIGNAL
+  Use SIGNAL when something matters, but is not yet closed enough to become a BUG or REFINEMENT.
+
+- SEED
+  Use SEED when a promising idea should be preserved, but is still too early, too broad, or too under-formed to promote.
+
+Entry Form
+[CATEGORY]
+[short label]
+- where:
+- what:
+- why it matters:
+- note:
+
+Reference Examples
+- These are illustrative only. Do not treat them as findings.
+
+BUG
+reference - real observable problem
+- where: a specific point where behavior already breaks or fails in practice
+- what: a concrete problem has already appeared and can be described without hypothesis
+- why it matters: the issue is already real, so keeping it visible helps prevent loss or false minimization
+- note: use BUG only when the problem is already observable
+
+REFINEMENT
+reference - small concrete improvement
+- where: a local point, wording, step, or behavior that already suggests a better small move
+- what: a concrete improvement is already clear enough to be discussed without turning into redesign
+- why it matters: small local refinements can remove friction or ambiguity with low structural cost
+- note: use REFINEMENT when the move is already shapeable as a local improvement
+
+SIGNAL
+reference - unclear local tension
+- where: a point, step, or surface where something feels risky, ambiguous, or unstable
+- what: something relevant emerged, but it is not yet concrete enough to classify as a BUG or REFINEMENT
+- why it matters: preserving the signal helps later verification without forcing premature routing
+- note: use SIGNAL when the finding matters but is not yet closed enough
+
+SEED
+reference - promising but too early
+- where: a local pass reveals a potentially strong idea that is still too early to route
+- what: something useful emerged, but it is still too broad, too young, or too under-formed to promote
+- why it matters: preserving the seed avoids losing leverage without forcing premature project weight
+- note: use SEED when the idea is worth keeping but not yet ready
+
+Failure Condition
+- If this file starts holding project truth instead of findings, it is being used wrong.
+- If this file starts replacing a canonical or support container, it is being used wrong.
+- If findings stay here after they are already clearly routable, it is being used wrong.
+- If entries become mini design docs, conversation logs, or brainstorming blocks, it is being used wrong.
+- If this file becomes the place where things live instead of the place where findings are first kept readable, it is wrong.
+
+--- ENTRIES START BELOW ---
+
+[CATEGORY]
+[short label]
+- where:
+- what:
+- why it matters:
+- note:
+
+[CATEGORY]
+[short label]
+- where:
+- what:
+- why it matters:
+- note:
+
+--- ENTRIES END ---
+
+AI SECTION
+
+- This file is not for canonical project truth, current live work, taken decisions, stable project constants, technical surface authority, session continuity, parked material, or archive memory.
+- Write here only if the content is a finding emerged during active work and is not yet ready to be treated as project truth or routed into a stronger container.
+- Read this file as a lateral finding layer: useful capture before routing, not a second project memory.
+- Keep each entry small, concrete, and readable.
+- Do not leave whole conversations, broad summaries, or design pads here. Extract the finding unit first.
+- Do not use this file as a substitute for 05. If the content is already alive enough to matter as unresolved project material, use 05 instead.
+- Do not use this file as a waiting room for already-routable content. If destination is clear enough, route it.
+- If the content clearly belongs in a canonical or support container, route it there instead of leaving it here.
+- If level, timing, authority, or destination are unclear, stop and ask.

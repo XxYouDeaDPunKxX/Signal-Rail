@@ -1,0 +1,93 @@
+HANDOFF AND RE-ENTRY
+
+AI QUICK NOTE
+
+- If you are using this file operationally, read the AI section at the end first.
+- For AI use, the AI section is the rule source for this file.
+- Do not derive rules from the human section if the AI section is present.
+
+What It Is
+- 09 is the layer of short continuity between sessions in Signal Rail.
+- It does not hold canonical truth about the project.
+- It exists to support complete handoff and fast re-entry without losing the thread of the work.
+- 09 does not try to tell the truth of the project: it tries to put you back into the session that just happened.
+- A non-canonical handoff that still needs absorption is better than truth promoted too early into the wrong container.
+
+What It Does
+- Session snapshot: captures what happened in the session before the chat closes.
+- Delta view: shows what truly changed from the previous session in files and canonicals.
+- Re-entry card: puts you back into the specific conversation and the real point where the work stopped.
+- It may summarize active freeze or current live state only as re-entry support, not as authority.
+
+Re-entry Card
+- dominant session topic:
+- second dominant topic, if present:
+- strong idea that emerged:
+- decisions discussed but not yet recorded:
+- where work stopped before the pause:
+- freeze / live summary:
+- next sensible move:
+
+Delta View
+- files changed since the previous session:
+- new entries in 04 not yet absorbed:
+- changed states in 05:
+- canonicals touched but not yet updated:
+
+What It Does Not Do
+- 09 output is non-canonical by default.
+- 09 does not replace identity, freeze, live state, decisions, or technical surface.
+- 09 may not override 02, 03, 04, or 08.
+- Canonical updates must be routed separately.
+
+Session Snapshot Form
+
+Required
+- date:
+- what was done:
+- what remains open:
+- next move:
+
+Optional
+- blocker:
+- files modified:
+- active risk:
+
+Form Rule
+- Required fields must always be present.
+- Optional fields may be omitted.
+- Do not add narrative outside the form.
+- AI-generated snapshots are unvalidated by default.
+- If `D-xx`, `L-xx`, or other canonical IDs are cited here, they remain continuity references only and do not become new local authority.
+- If a session needs to cite useful material outside the canonical set, use `external reference`.
+
+Failure Condition
+- If you are writing decisions in 09 instead of 04, you are using it wrong.
+- If you are updating live state in 09 instead of 03, you are using it wrong.
+- If 09 becomes the place where things live instead of the place where things transit, it is wrong.
+
+AI SECTION
+
+- This file is not for project identity, stable project constants, current live work as project truth, taken decisions, technical surface authority, parked material, or archive history.
+- Write here only if the content exists to support handoff, re-entry, continuity between sessions, or non-canonical summaries built from canonical state.
+- Read 09 as continuity shape: enough frame to re-enter cleanly, not a second source of project truth.
+- 09 supports handoff, re-entry, and session-aware continuity between sessions.
+- 09 output is non-canonical by default.
+- 09 may summarize 02, 03, 04, and 08 for continuity and re-entry.
+- 09 may preserve session-specific frame needed to re-enter the work cleanly.
+- IDs cited here stay continuity references only; 09 does not mint new canonical authority from them.
+- Use `external reference` for useful references outside the canonical set.
+- 09 may not override 02, 03, 04, or 08.
+- Do not turn 09 into a second live workspace.
+- Canonical updates must be routed separately.
+- Session snapshots must use the required form.
+- Required fields must always be present.
+- Optional fields may be omitted.
+- Do not add narrative outside the form.
+- AI-generated snapshots are unvalidated by default.
+- If this content defines project identity, use 01.
+- If this content defines a stable project constant, use 02.
+- If this content describes current live work, blockers, or next move as project truth, use 03.
+- If this content records a decision that has already won, use 04.
+- If this content maps technical surface, entrypoints, sensitive surfaces, minimal runbook, or critical env/deps, use 08.
+- If level, timing, or authority are unclear, stop and ask.

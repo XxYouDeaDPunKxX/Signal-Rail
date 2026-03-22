@@ -1,0 +1,149 @@
+ORIENTATION
+
+AI QUICK NOTE
+
+- If you are using this file operationally, read the AI section at the end first.
+- For AI use, the AI section is the rule source for this file.
+- Do not derive rules from the human section if the AI section is present.
+
+What It Is For
+- This file explains what the project is.
+- It gives the right frame before the rest is read.
+- It prevents wrong readings of the project.
+
+What Goes Here
+- The project name. It belongs here because it closes what we are talking about immediately. If you close it well, you gain immediate orientation.
+- A clear description of what the project is. It belongs here because it lets someone understand the project without reading everything else first. If you write it well, you gain a simpler and more shareable reading.
+- The need or tension the project comes from. It belongs here because it helps explain why the project exists. If you focus it well, you gain a more readable base for everything else.
+- The core direction the project follows. It belongs here because it helps the project stay legible even when work changes. If you write it well, you gain continuity of reading.
+- The trade-offs the project accepts to stay alive. They belong here because they show how the project holds in reality. If you make them clear, you gain a less abstract view of the project.
+- The main boundaries of the project. They belong here because they help show what really belongs to the project and what does not. If you close them well, you gain a more stable reading.
+- The separations you do not want to confuse. They belong here because they prevent recurring reading mistakes. If you name them well, you gain less ambiguity.
+
+What Does Not Go Here
+- Current work. This belongs in 03 because it describes the current live state of the project. Otherwise you risk confusing project identity with what is happening now. If you place it in 03, you gain a clearer reading of the present.
+- Current blockers or next moves. This belongs in 03 because it belongs to work in progress. Otherwise you risk making something operational look structural. If you place it in 03, you gain a more readable next action.
+- Decisions already taken. This belongs in 04 because it records what has already won. Otherwise you risk mixing identity and choice. If you place it in 04, you gain a clear trace of what has already been decided.
+- Ideas still under evaluation. This belongs in 05 because it has not been closed yet. Otherwise you risk making an open direction look already true. If you place it in 05, you gain room to evaluate it without forcing it.
+- Repos, key folders, entrypoints, sensitive surfaces, minimal runbook, or critical dependencies. This belongs in 08 because it describes where the project lives technically, not what it is. Otherwise you risk turning orientation into a surface map. If you place it in 08, you gain cleaner orientation.
+- The way you manage documents. That does not define the project; it defines a working method. Otherwise you risk describing your document system instead of the project. If you keep it out of 01, you gain cleaner orientation.
+- Explanations about the tool or the system. That information does not help explain what the project is. Otherwise you risk shifting 01 from the project to its surrounding tooling. If you keep it out, you gain a clearer and more stable file.
+- Backlog, diary, changelog, or manifesto. These do not help orient the project. Otherwise you risk turning 01 into a page that accumulates everything. If you keep them out, you gain a file that really orients.
+
+Update It When
+- The correct way to understand the project changes.
+- The real perimeter changes.
+- A core direction changes.
+- Important trade-offs or boundaries change.
+- Do not update it for momentary operational movement.
+
+File Sections
+
+Project Name
+- project name:
+- Write the real project name.
+
+What It Is
+- Explain in 1-3 sentences what the project is.
+- A new person should be able to understand it.
+- Keep the tone clear, simple, and concrete.
+
+Why It Exists
+- Write the need, friction, or lack that made the project exist.
+- Get to the point.
+
+Core Direction
+- Write the guiding idea of the project.
+- Temporary practical choices do not belong here.
+
+Accepted Trade-offs
+- Write the trade-offs the project accepts to stay alive.
+- This includes the relationship with time, cost, friction, maintenance, real use, and concrete limits.
+
+Main Boundaries
+- Write the boundaries that help explain what the project is and is not.
+- Include only boundaries that genuinely improve understanding.
+
+Hard Boundaries
+- Write the separations you do not want confused.
+- Include only the ones that help read the project without error.
+
+Template
+
+Project Name
+- project name:
+
+What It Is
+- write a short, clear description here
+
+Why It Exists
+- write the need or tension it comes from here
+
+Core Direction
+- write the guiding idea of the project here
+
+Accepted Trade-offs
+- write the trade-offs the project accepts to stay alive here
+
+Main Boundaries
+- write the boundaries that help explain what it is and is not here
+
+Hard Boundaries
+- write the separations you do not want confused here
+
+Ready Structure
+
+Project Name
+- project name:
+
+What It Is
+- 
+
+Why It Exists
+- 
+
+Core Direction
+- 
+
+Accepted Trade-offs
+- 
+- 
+- 
+
+Main Boundaries
+- 
+- 
+- 
+
+Hard Boundaries
+- 
+- 
+- 
+
+Section Hygiene
+- The section titles in 01 are operational anchors for reading and maintenance, so keep them stable.
+- Avoid unnecessary duplicates of section titles when the file is live; if you reopen the template, close it again as soon as the file returns to being a real surface.
+- Open slots are acceptable only while the file is clearly incomplete; they should not become the normal form of a live file.
+- If you need to cite useful material outside the canonical set, use `external reference` instead of pretending it is a canonical link.
+
+Typical Errors
+- Using this file to explain what is happening right now.
+- Putting decisions or workflow changes here.
+- Treating it as a manifesto or promotional page.
+- Leaving it so abstract that the project still cannot be understood.
+
+AI SECTION
+
+- This file is not for current live work, current blockers, next moves, decisions already taken, or ideas still under evaluation.
+- This file is not for tool adoption, workflow changes, or document-management choices.
+- Write here only if the content defines the identity-shape of the project: what it is, why it exists, what direction it follows, what compromises it accepts, or which boundaries matter to understand it.
+- Section titles in this file are operational anchors for reading and maintenance; keep them stable and avoid unnecessary duplicates when the file is live.
+- Open slots are acceptable only while the file is still clearly incomplete; they should not become the normal state of a live orientation file.
+- Use `external reference` for useful references outside the canonical set.
+- If this content describes what is happening now, use 03.
+- If this content records a choice that has already won, use 04.
+- If this content is still an open idea, direction, or unresolved option, use 05.
+- If this content maps where the project really lives technically, use 08.
+- Do not write here just because something sounds foundational. Write here only if it helps the project stay understandable as itself.
+- Do not update 01 for operational movement. Update it only when the correct way to understand the project has changed.
+- If level, timing, or authority are unclear, stop and ask.

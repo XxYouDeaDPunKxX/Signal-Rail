@@ -1,0 +1,252 @@
+AI TO AI
+
+Purpose
+- This guide controls how a new chat or AI works inside a project that uses Signal Rail.
+- Kernel posture: first close identity, then close canonical state, then validate before writing.
+- If a hard rule cannot be satisfied safely, stop and ask.
+
+Activation
+- Exact command: read 06_ai_to_ai.txt
+- Effect:
+  - activate Signal Rail protocol
+  - do not bootstrap automatically
+  - do not classify or write automatically
+  - do not infer the host project automatically
+- If AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt is present, treat the current folder as a deployed Signal Rail instance marker until the user clarifies otherwise.
+- AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt does not identify the host project or the current target by default.
+
+1. Identity State
+- Signal Rail is not the host project.
+- Signal Rail is the document system used to govern the host project.
+- Files inside Signal Rail are canonical containers.
+- Real host material may live outside Signal Rail.
+- 06_ai_to_ai.txt is a lateral kernel. It governs protocol behavior. It is not host-project canonical content.
+- AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt means this folder is the tool used inside a host project, not the host project itself.
+- Do not treat the tool surface, the working object, or a separate target under analysis as the host project by default.
+- In host canonical files, describe the host project by default, not Signal Rail.
+- Mention Signal Rail only if it clarifies governance, current live work, or the host project is Signal Rail itself.
+- First close:
+  - the host project
+  - the active mode
+  - source authority if needed
+- Minimum modes:
+  - orientation
+  - reference
+  - review
+  - ingest
+  - work
+  - structure
+- Default startup mode = orientation.
+- Orientation is read-only.
+- Only one active mode is allowed at a time.
+- Use structure mode when the target is 01_orientation.txt, 02_protocol_freeze.txt, or 06_ai_to_ai.txt.
+- If a task starts in one mode and requires structure mode, stop and ask before crossing.
+- Minimum read:
+  - AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt if present
+  - 01_orientation.txt
+  - 03_master_working.txt
+- Read 04_decision_log.txt if decisions may be touched.
+- Read 02_protocol_freeze.txt if identity, freeze, or structure may be touched.
+- Read 08_surface_map.txt if technical surface, entrypoints, sensitive files, or critical env/deps may be touched.
+
+2. Canonical State
+- 01_orientation.txt = host project identity, perimeter, and reading frame
+- 02_protocol_freeze.txt = identity-level constants
+- 03_master_working.txt = current live project state
+- 04_decision_log.txt = decisions taken, what they beat, what they touch
+- 05_latent_ideas.txt = unresolved material not yet absorbed well
+- 06_ai_to_ai.txt = lateral kernel: horizontal protocol behavior, not host-project canonical content
+- 07_guided_prompts_test.txt = guided prompt flows and safe question flows
+- 08_surface_map.txt = technical surface map: where the project lives, where to enter, where not to enter, sensitive surfaces, minimal runbook, critical env/deps
+- 09_handoff_reentry.txt = continuity layer: handoff, re-entry, and non-canonical continuity output
+- 98_parking.txt = useful but not live
+- 99_archive.txt = historical, duplicate, or closed
+- Files outside canonical containers carry no authority over freeze, decisions, or project identity.
+- If a canonical file contains AI QUICK NOTE and AI SECTION, use the AI SECTION as the operational rule source for that file.
+- Do not derive operational rules from the human section if the AI SECTION is present.
+- 01 helps close project meaning, but it does not override 02, 03, or 04.
+- 02 has authority on identity-level constants.
+- 03 has authority on current intended work state.
+- 04 has authority on taken decisions.
+- 06 has authority on horizontal protocol behavior.
+- 07 has authority on guided question flow and safe prompt flows.
+- 08 has authority on technical surface map, entrypoints, sensitive surfaces, minimal runbook, and critical env/deps.
+- 09 output is non-canonical by default.
+- 09 may summarize canonical state for continuity.
+- Canonical updates must be routed separately.
+- Non-canonical lateral support files do not override canonical containers and do not carry project truth by default.
+- 03 is not an orientation log or boot log.
+- 04 is not brainstorming or a deduced decision.
+- 05 is not permanent archive.
+- 03 may show a live line before 04 records it.
+- 04 records a line only after it has already won and is already in effect.
+- Canonical IDs stay local to their container family: 02 uses `F-xx`, 04 uses `D-xx`, 05 uses `L-xx`, 98 uses `P-xx`, 99 uses `A-xx`, and cross-file references stay references instead of becoming new local IDs.
+- `links to` is for canonical, internal, or explicitly host-safe references that the system should validate as part of canonical reading.
+- `external reference` is for useful references outside the canonical set or outside the local surface; it does not carry canonical authority by default.
+- If a unit has no clear destination yet, use 05.
+- If a unit shows repeated structural relevance, do not leave it unframed in 05 by default.
+- 05 gravity is a controlled exception to mechanical classification.
+- State its strongest plausible level: 01, 02, 03, or 04.
+- If it stays in 05, that level indicates its gravity, not its state.
+- Plausible levels 02 and 04 are high-sensitivity labels and should expect human validation.
+- Do not treat AI-suggested gravity as authority until verified by the user.
+- Do not treat AI proposals or unconfirmed AI summaries as authority by default.
+- If strongest plausible level or gravity is still unclear, stop and ask.
+
+3. Trigger and Anti-Book Discipline
+- The system may open trigger-based delta review proposals.
+- The system may not write canonical updates autonomously.
+- Only 03, 04, and 08 may receive automatic trigger proposals.
+- 01, 02, and 05 never receive automatic triggers.
+- 98 and 99 are outside the normal trigger system.
+- 03 may trigger only when the current objective changes, the dominant blocker changes, or a new line enters current live work.
+- 04 may trigger only when "won against" can be stated for a decision already in effect.
+- 08 may trigger only when a path changes, an entrypoint changes, or a critical dependency changes.
+- Do not trigger from broad semantic inference.
+- Do not trigger from background interpretation of free text.
+- Trigger only from observable workflow events.
+- A trigger opens review.
+- A trigger does not write.
+- Review requires explicit human confirmation before any canonical update.
+- Horizontal system rules live in 06.
+- Canonical files define themselves. They do not restate cross-file system rules.
+- Local canonicals may declare only their own family rule or local anchor hygiene when that helps prevent miswrite, but they may not restate the full horizontal kernel there.
+- Do not add local references to 06 by default.
+- Local additions are not allowed by default.
+- If a local exception is needed, it requires explicit human authority.
+- If the same rule appears across multiple canonicals, keep it only in 06.
+
+4. Kernel Refresh Discipline
+- The system may open 06 reread proposals.
+- The system may not infer internal degradation as fact.
+- A second stop and ask in the same task triggers a 06 reread proposal.
+- Before crossing into structure mode from another mode, reread 06.
+- Before touching 01, 02, 04, or 06, reread 06.
+- A live conflict between canonicals and implementation triggers a 06 reread proposal.
+- A live conflict between canonicals triggers a 06 reread proposal.
+- Do not trigger reread from task length alone.
+- Do not trigger reread from dense conversation alone.
+- Do not trigger reread from broad semantic suspicion.
+- Trigger reread only from observable protocol-risk events.
+
+5. Project Memory Gate
+- Before creating canonical content, reread 06.
+- Before moving content between canonical files, reread 06.
+- Before absorbing content into a canonical file, reread 06.
+- Before rewriting canonical content, reread 06.
+- Do not trigger from notes not being routed into canonicals.
+- Do not trigger from free text outside canonical update flow.
+
+6. Validation State
+- Ask if object, mode, source authority, or live source is unclear.
+- Ask if context still branches into more than one valid reading.
+- Ask if a choice could change meaning, continuity, destination, freeze, or structure.
+- Ask if canonical docs and implementation disagree.
+- If context is missing, do not complete by invention.
+- Before placing anything, close object, mode, and container.
+- Extract first. Classify second. Propose destination third.
+- Classify internal units, not only files.
+- Separate file role from content role.
+- If one file contains units with different destinations, separate them before classification.
+- Do not use date, format, filename, folder, or cleanliness as proof of real role.
+- Do not assume the newest file is the live one.
+- If you find multiple similar versions, do not pick the live one too early.
+- First close whether content is live work, latent, or continuity. Only then force a finer canonical level if needed.
+- If you are not sure, stop and ask.
+- If destination still depends on an uncertain reading, do not force it.
+- If classification could change meaning or continuity, stop and ask.
+- Every session must report whether the task is converged or still divergent.
+- If more than one valid path remains, do not promote. Declare divergence and propose the Minimally Viable Path.
+- If the task is converged, either promote to the right file or state why it still remains in 05.
+- Before promoting a structurally strong unit, test one realistic failure condition.
+- If one realistic failure condition breaks it, do not promote it.
+- If no realistic failure condition breaks it, increase confidence in its strongest plausible level.
+- Before updating 02, 03, or 04, declare what else the change touches.
+- If what the change touches is unclear or high-risk, stop and ask before writing.
+- If protocol is violated, stop processing and return only:
+  - violated rule
+  - blocked action
+  - missing clarification
+
+7. Interaction Discipline
+- Interaction language follows the user.
+- Do not infer recording language from interaction language, input format, filename, or folder alone.
+- Preserve source language until recording requires change.
+- Spoken input is not canonical text.
+- Cleaner or newer does not mean more authoritative.
+- Ask one question at a time.
+- Ask only the minimum needed to continue safely.
+- Do not dump multiple intake questions at once.
+- Do not ask the next question until the current doubt is closed enough.
+- Be brief and concrete.
+
+8. Operating Procedure
+- Move order:
+  - activate
+  - close object
+  - close mode
+  - minimum read
+  - identify source authority if needed
+  - clarify task
+  - extract
+  - classify
+  - propose destination
+  - write only if clear
+- Put it in the right file only if destination, level, and authority are clear enough.
+- If it is unclear, put it in 05_latent_ideas.txt.
+- Leave each touched item with the right container, state, and next step if needed.
+- Read the source material in the current session before routing or rewriting it.
+- Read the target live file before writing.
+- Do not create a new file if a canonical container already exists.
+- Use a lateral support file only for temporary capture that is still outside safe canonical routing.
+- Do not perform actions from another mode.
+- Do not touch 01, 02, or 06 from work, ingest, or reference without an explicit structure reading.
+- Do not write from orientation.
+- Do not promote until the destination is clear enough to change structure, authority, or current live state.
+- Do not use 03 for proposals, likely next moves, or strong ideas that are not already adopted as current live work.
+- Do not treat an AI recommendation as a decision just because it sounds strong.
+- Do not use 02 for strong strategy that is still being tested.
+- Do not use 04 for lines that are not already in effect.
+- Do not use 08 for identity, current live work, taken decisions, or unresolved ideas.
+- Use 08 when the content maps where the project really lives, where to enter, where not to enter, what is sensitive, or what is minimally required to work on it safely.
+- Do not merge contents with different destinations into the same summary.
+- Do not fill gaps with fake certainty.
+- If canonical docs and implementation disagree, stop, report the conflict, and ask which side must be updated.
+- Update 03_master_working.txt when active work changes.
+- Update 04_decision_log.txt when a decision changes.
+- If a live decision changes current work, 03_master_working.txt should reference the decision ID.
+
+Operations
+- "read 06_ai_to_ai.txt" = activate the protocol; it does not authorize bootstrap or writing
+- preserve = save without losing the right context
+- read and rework = read the material and absorb it into the right canonical container
+- absorb = move content from latent or scattered into one of the live files
+- park = move useful but inactive material to 98_parking.txt
+- archive = move historical or closed material to 99_archive.txt
+- unearth = review entries in 05 and choose absorb, park, or leave alive
+
+Global Gate Effect
+- A 06 reread proposal does not authorize writing.
+- It re-closes protocol before the task continues.
+
+Global Stop Rule
+- If scope, level, timing, authority, or duplication risk are unclear, stop and ask.
+
+Required return
+- host project:
+- mode used:
+- sources read:
+- state of convergence:
+- what you extracted:
+- where you put it:
+- what remains uncertain:
+- recommended next step:
+
+Reminder
+- First object.
+- Then mode.
+- Then minimum orientation.
+- Then task clarification.
+- Then right container.
+- Write only if the task is clear.
+- Never reinvent the doc system while working on something else.

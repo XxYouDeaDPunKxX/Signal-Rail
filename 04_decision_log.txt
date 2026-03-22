@@ -1,0 +1,117 @@
+DECISION LOG
+
+AI QUICK NOTE
+
+- If you are using this file operationally, read the AI section at the end first.
+- For AI use, the AI section is the rule source for this file.
+- Do not derive rules from the human section if the AI section is present.
+
+What It Is For
+- This file keeps the record of decisions already taken.
+- Write here what has already won, what it won against, and when it would make sense to reopen it.
+- It does not collect good ideas. It collects choices the project is already treating as real.
+
+What Goes Here
+- Decisions already taken. They belong here because this file exists to record what the project has truly chosen. If you close them well, you gain readable memory.
+- Choices that have already beaten a real alternative. They belong here because without a won comparison there is no clean decision yet. If you write it well, you gain a clearer perimeter of the choice.
+- Lines the project is already using or already treating as true. They belong here because they are no longer only intentions. If you record them well, you gain continuity.
+- Decisions for which you can say what they touch, why they won, and what risk opens if they are wrong. They belong here because a decision is only strong if you can read its consequences and cost. If you close them well, you gain a stronger log.
+
+What Does Not Go Here
+- Preferences. They do not belong here because a preference is not enough to make a decision. Otherwise you risk recording taste instead of a real choice. If you keep it out, you gain a cleaner log.
+- Promising hypotheses. They belong in 05 because they matter but have not won yet. Otherwise you risk making something open look closed. If you place it in 05, you gain room to evaluate it better.
+- Strong ideas that have not yet won. They belong in 05 because they are not decisions yet. Otherwise you risk anticipating a closure the project has not made yet. If you place it in 05, you gain a more credible 04.
+- Lines that have not yet truly entered the work. They do not belong here because a decision should already be influencing the project. Otherwise you risk recording premature intentions. If you keep them out, you gain a cleaner boundary.
+- Elegant backlog or premature anticipation. That does not belong here because it widens the file with things that have not yet won. Otherwise you risk using 04 as a showcase for future directions. If you keep it out, you gain a more reliable log.
+
+Update It When
+- A choice has already won against a real alternative.
+- The project is already treating it as true.
+- You can explain what it changes and what it would cost if it were wrong.
+- If you cannot write `won against`, you usually are not in 04 yet.
+
+How To Tell Whether Something Is Really A Decision
+- It has already won against a real alternative.
+- The project already treats it as a real or operative line.
+- You can say what it touches.
+- You can say why it won.
+- You can say what risk would open if it had been premature.
+
+Possible States
+- freeze = very difficult to reopen
+- strong but open = it has won, but can still be refined
+- in rework = it exists, but its shape is not closed yet
+- reopened = it used to be live, but is now under revision
+
+How To Read The Fields
+- id: stable identifier, never reused
+- date: when the decision was taken or formally recorded
+- state: how closed or reopened it is
+- decision: the live sentence, not the long story
+- won against: the real alternative it beat
+- touches: which parts of the project it moves
+- `links to`: sources or nodes that help explain it
+- `external reference`: useful files or references outside the canonical set; they help with context but carry no canonical authority by default
+- impact: what truly changes
+- why: why it won
+- risk if wrong: the cost or distortion if the decision was premature
+- reopening trigger: what would have to happen to reopen it seriously
+- Local entries in 04 use only `D-xx`.
+- If you reference freeze entries, latent entries, or other external IDs, they remain references in `links to`; they do not become new local IDs here.
+- If you need to cite files or references outside the canonical set, use `external reference` instead of widening `links to`.
+- If one of these fields cannot be closed without invention, the entry is probably not ready to be here yet.
+
+Template
+
+01.
+- id: D-01
+- date:
+- state:
+- decision:
+- won against:
+- touches:
+- links to:
+- external reference:
+- impact:
+- why:
+- risk if wrong:
+- reopening trigger:
+
+02.
+- id: D-02
+- date:
+- state:
+- decision:
+- won against:
+- touches:
+- links to:
+- impact:
+- why:
+- risk if wrong:
+- reopening trigger:
+
+Continue Like This
+- Add new blocks while keeping numbering stable.
+- Never reuse an ID even if one decision is removed or archived.
+
+Typical Errors
+- Using 04 as an elegant backlog.
+- Recording something as a decision when it is only convincing latent material.
+- Skipping `won against` and losing the true perimeter of the choice.
+- Treating an AI suggestion or a strong preference as if it were already a decision.
+- Using 04 to anticipate a line that has not really entered the work yet.
+
+AI SECTION
+
+- This file is not for preferences, promising ideas, unresolved options, current live work, or decisions that have not yet clearly won.
+- Write here only if the content records a decision that has already won against a real alternative, is already being treated as real in the project, and is stable enough to be recorded as such.
+- Local entries in this file use only `D-xx`.
+- Cross-file IDs stay references in `links to`; they do not become new local IDs here.
+- Use `external reference` for useful references outside the canonical set; do not widen `links to` for them.
+- If this content defines what the project is or how it should be understood, use 01.
+- If this content defines a stable project constant, use 02.
+- If this content describes current live work, current blockers, or the next move, use 03.
+- If this content is still an idea, a possible direction, or a decision that has not yet clearly won, use 05.
+- Read 04 as the log of what has already won and is already in effect, not as a waiting room for strong-looking choices.
+- If you cannot state what it won against, do not write it here.
+- If level, timing, or authority are unclear, stop and ask.

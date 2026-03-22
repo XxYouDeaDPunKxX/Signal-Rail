@@ -1,0 +1,17 @@
+# Windows filesystem noise
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor-local settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.log
