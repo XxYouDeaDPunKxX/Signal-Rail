@@ -1,9 +1,0 @@
-AI TO AI - DEPLOYED SIGNAL RAIL INSTANCE
-
-- This folder is a deployed Signal Rail instance.
-- This folder is the tool surface, not the host project.
-- This folder does not identify the current target or source authority by default.
-- Do not infer the host project from folder name, file presence, or instance marker alone.
-- Close only the minimum host, target, and source frame needed to orient safely.
-- For operational rules, read 06_ai_to_ai.txt.
-- If host project, current target, or source authority are unclear, stop and ask.
