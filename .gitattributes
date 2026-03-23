@@ -2,5 +2,5 @@
 
 *.md text eol=lf
 *.txt text eol=lf
-*.ps1 text eol=crlf
-*.bat text eol=crlf
+*.ps1 text eol=crlf linguist-detectable=false
+*.bat text eol=crlf linguist-detectable=false
