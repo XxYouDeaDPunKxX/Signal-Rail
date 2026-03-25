@@ -4,7 +4,7 @@ Use this only at the end.
 Do not use it as a writing guide.
 
 Coverage
-- README localized
+- `00_runtime_entry.txt` localized
 - canonicals localized
 - shipped lateral support files localized when they belong to the SR core, such as `97_field_findings.txt`
 - AI QUICK NOTE blocks localized
@@ -50,7 +50,7 @@ Validation
 Final pass
 - no mixed-language files in the localized SR core
 - no leftover source-language tags
-- no obvious drift between README, canonicals, protocol files, and shipped lateral support files
+- no obvious drift between `00_runtime_entry.txt`, canonicals, protocol files, and shipped lateral support files
 
 If any check fails
 - do not freeze the localized kit

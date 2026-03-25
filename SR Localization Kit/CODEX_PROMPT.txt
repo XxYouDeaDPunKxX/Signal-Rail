@@ -18,7 +18,7 @@ Rules:
 - Keep the canonical structure unchanged.
 
 Localize:
-- README
+- `00_runtime_entry.txt`
 - canonicals
 - shipped lateral support files that belong to the SR core, such as `97_field_findings.txt`
 - AI QUICK NOTE blocks
@@ -42,7 +42,7 @@ If the vocabulary is not locked, stop before editing.
 Work order:
 1. Confirm the source baseline path and the separate target-copy path.
 2. Lock the vocabulary first.
-3. Localize README.
+3. Localize `00_runtime_entry.txt`.
 4. Localize canonicals and shipped lateral support files.
 5. Sync `06`.
 6. Sync `07`.

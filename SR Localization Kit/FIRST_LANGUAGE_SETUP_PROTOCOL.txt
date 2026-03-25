@@ -38,7 +38,7 @@ Structural invariants
 - Keep the canonical structure unchanged.
 
 What must be localized
-- README
+- `00_runtime_entry.txt`
 - canonical file text
 - shipped lateral support file text when it belongs to the SR core, such as `97_field_findings.txt`
 - AI QUICK NOTE blocks
@@ -70,7 +70,7 @@ Localization rule
 Canonical work order
 0. Create a separate target copy.
 1. Lock the vocabulary in that target copy before editing any file.
-2. Localize README.
+2. Localize `00_runtime_entry.txt`.
 3. Localize canonicals:
    - `01`
    - `02`

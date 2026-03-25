@@ -1,0 +1,268 @@
+SIGNAL RAIL RUNTIME ENTRY
+
+Purpose
+- This file is the runtime entry manual of Signal Rail.
+- Read this file before using the system.
+- This file governs valid entry and correct system reading.
+- `06_ai_to_ai.txt` governs execution after entry becomes valid.
+
+Core rule
+- Do not begin from a target file.
+- Do not begin from a guess.
+- Do not begin from the nearest visible surface.
+- Do not act before entry validity is closed.
+
+Reference / Execution split
+- If omission causes bad entry or bad reading of the system, it belongs here.
+- If omission causes bad movement after valid entry, it belongs in `06_ai_to_ai.txt`.
+- If both seem true, keep only the entry threshold here and keep the operative procedure in `06_ai_to_ai.txt`.
+
+1. WHAT THIS IS
+
+Signal Rail
+- Signal Rail is a document-governance system.
+- It governs authority, level, continuity, and safe routing of project material.
+- It does not automatically identify the governed domain.
+- It does not make all surfaces equivalent.
+- It does not exist to collect everything.
+- It exists to keep action readable, bounded, and recoverable.
+
+System reality
+- You are entering a governance system, not the governed domain by default.
+- The system does not automatically coincide with the current object of work.
+- The first task is not to solve.
+- The first task is to close the minimum safe frame.
+
+Operational pair
+- `00_runtime_entry.txt` = reference-entry layer
+- `06_ai_to_ai.txt` = execution layer
+
+2. SYSTEM MAP
+
+Canonical surfaces
+- `01_orientation.txt`
+  - governs: project identity, perimeter, and reading frame
+- `02_protocol_freeze.txt`
+  - governs: hard-to-reopen identity constants
+- `03_master_working.txt`
+  - governs: current live state
+- `04_decision_log.txt`
+  - governs: already-won decisions already in effect
+- `05_latent_ideas.txt`
+  - governs: live unresolved material
+- `08_surface_map.txt`
+  - governs: technical topology, entrypoints, sensitive surfaces, critical deps
+- `09_handoff_reentry.txt`
+  - governs: continuity and re-entry support between sessions
+
+Lateral surfaces
+- `AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt`
+  - governs: instance marker only; does not identify host project or authority
+- `97_field_findings.txt`
+  - governs: temporary finding capture, not project memory
+- `98_parking.txt`
+  - governs: useful but not live material
+- `99_archive.txt`
+  - governs: historical or closed material
+
+Authority Rule
+- Canonical surfaces do not have equal authority.
+- Each canonical governs its own level only.
+- Lateral surfaces do not override canonicals.
+- `09_handoff_reentry.txt` supports continuity and does not override canonical truth.
+- In conflict, the file that governs the touched level decides the reading boundary.
+
+ID Families
+- `02` uses `F-xx`
+- `04` uses `D-xx`
+- `05` uses `L-xx`
+- `98` uses `P-xx`
+- `99` uses `A-xx`
+
+3. ENTRY
+
+Default startup state
+- Startup mode = orientation.
+- Orientation is read-only.
+- Reading does not authorize action.
+- Understanding does not authorize writing.
+- Only one active mode is allowed at a time.
+
+Mandatory read order
+1. Read `00_runtime_entry.txt`
+2. Read `06_ai_to_ai.txt`
+3. Read `01_orientation.txt`
+4. Read `03_master_working.txt`
+
+Conditional reads
+- Read `AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt` if present - marks the folder as a deployed instance; does not identify host project or authority.
+- Read `02_protocol_freeze.txt` if identity, freeze, or structure may be touched.
+- Read `04_decision_log.txt` if decisions may be touched.
+- Read `08_surface_map.txt` if technical surface, entrypoints, sensitive files, or deps may be touched.
+- Read `09_handoff_reentry.txt` if continuity or restart matters.
+- Read `05_latent_ideas.txt` if unresolved live material is under review.
+- Read `97_field_findings.txt` only if active findings are explicitly relevant.
+
+False entrypoints
+- Do not start from the file named first by the user.
+- Do not start from continuity as if it were truth.
+- Do not start from findings as if they were memory.
+- Do not start from any file before closing frame, mode, and minimum read.
+
+Minimum read rule
+- Minimum read must be completed before substantive action.
+- A task arriving before minimum read is complete does not authorize skipping minimum read.
+
+Activation threshold
+- Entry is valid only after:
+  - the system is identified
+  - the host project is closed enough for the task
+  - the current working object is closed enough for the task
+  - minimum read is complete
+  - mode is closed enough for the task
+  - scope is closed enough for the task
+  - authority is closed enough for the task
+
+Uninitialized canonical state
+- If `01_orientation.txt` and `03_master_working.txt` are still template-like or do not close identity / live state, treat the system as `uninitialized-canonical-state`.
+- In `uninitialized-canonical-state`, do not interpret canonicals as fully live authority surfaces.
+- In `uninitialized-canonical-state`, do not promote as if the system were already initialized.
+
+4. PERMISSIONS
+
+Allowed immediately
+- orientation reading
+- minimum read completion
+- source comparison
+- uncertainty declaration
+- frame closure
+- task clarification
+- extraction without promotion
+
+Not allowed immediately
+- canonical writing
+- canonical rewrite
+- promotion across levels
+- freeze edits
+- decision recording
+- structural touch
+- self-authorized scope expansion
+- completion by invention
+
+Stop-and-ask conditions
+- host project unclear
+- current working object unclear
+- touched level unclear
+- mode unclear
+- authority unclear
+- scope unclear
+- live source unclear
+- classification could change meaning
+- promotion could change structure or continuity
+- canonicals conflict
+- more than one valid reading remains
+
+No self-authorization
+- Do not authorize writing because something looks clear.
+- Do not authorize promotion because something sounds strong.
+- Do not authorize scope expansion silently.
+- Do not infer authority from cleanliness, recency, completeness, or elegance.
+
+Mode boundary
+- Mode is a permission boundary, not a label.
+- A mode change changes what is allowed.
+- If a closed gate reopens during the task, stop treating execution as valid and re-enter through Recovery.
+
+5. ROUTING
+
+Routing order
+- First close what the unit is.
+- Then close how stable it is.
+- Then close where it belongs.
+
+Routing rules
+- Classify units, not files.
+- Do not route by the apparent importance of the file.
+- Do not route by writing quality.
+- Do not route by conversational momentum.
+
+Level rules
+- identity -> `01_orientation.txt`
+- hard-to-reopen constant -> `02_protocol_freeze.txt`
+- current live work -> `03_master_working.txt`
+- already-won decision in effect -> `04_decision_log.txt`
+- live unresolved material -> `05_latent_ideas.txt`
+- technical topology / safe entry surface -> `08_surface_map.txt`
+- continuity / restart support -> `09_handoff_reentry.txt`
+
+Non-promotion rules
+- Clarity is not authority.
+- Strength is not promotion.
+- A summary is not a source.
+- A strong sentence is not a decision.
+- An elegant structure is not freeze.
+- A plausible line is not live work.
+- If destination is not closed enough, do not force promotion.
+
+Safe hold
+- If the material is still live but unresolved, hold it in `05_latent_ideas.txt`.
+
+6. RECOVERY
+
+Authority unclear
+- state: blocked
+- next correct move: stop and ask for authority closure
+
+Scope unclear
+- state: blocked
+- next correct move: stop and ask for scope closure
+
+Mode unclear
+- state: blocked
+- next correct move: stop and ask for mode closure
+
+Canonical conflict
+- state: blocked
+- next correct move: state the conflict and ask which file governs the touched level
+
+Divergent valid readings
+- state: divergent
+- next correct move: do not promote; return the smallest safe reading and what remains open
+
+Uninitialized canonical state discovered mid-task
+- state: uninitialized-canonical-state
+- next correct move: stop canonical interpretation and ask operator for initialization instructions
+
+Restart path
+- Re-enter from:
+  1. `00_runtime_entry.txt` section 3
+  2. `06_ai_to_ai.txt` - `1. Identity State`
+  3. `01_orientation.txt`
+  4. `03_master_working.txt`
+  5. additional conditional surfaces only if triggered again
+
+7. RETURN
+
+Minimum return format in this file
+- state:
+- next correct move:
+
+Allowed `state:` values
+- `entry-valid`
+- `blocked`
+- `uninitialized-canonical-state`
+- `divergent`
+
+Return rule
+- Use the minimum return format in this file until entry is valid.
+- Once execution is valid, operative return format is governed by `06_ai_to_ai.txt`.
+
+VALID SHORTEST PATH
+
+1. identify the system
+2. identify the host project and the current working object
+3. complete minimum read
+4. test entry validity
+5. if `entry-valid`, move to `06_ai_to_ai.txt` - `1. Identity State`
+6. if `uninitialized-canonical-state`, stop and ask operator for initialization instructions
+7. if `blocked` or `divergent`, do not promote; return state and next correct move

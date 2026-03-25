@@ -39,11 +39,12 @@ if not "%EXIT_CODE%"=="0" (
 ) else (
   echo Bootstrap completed.
   echo Recommended next steps:
-  echo 1. Read 06_ai_to_ai.txt.
-  echo 2. Close host project, working object, and mode.
-  echo 3. Fill 01_orientation.txt and 03_master_working.txt first.
-  echo 4. Continue from the textual system and use the canonicals by level.
-  echo 5. Use 97_field_findings.txt only when you want to keep lateral findings readable before routing or discarding them.
+  echo 1. Read 00_runtime_entry.txt first.
+  echo 2. Read 06_ai_to_ai.txt after entry is valid.
+  echo 3. Close host project, working object, and mode.
+  echo 4. Fill 01_orientation.txt and 03_master_working.txt first.
+  echo 5. Continue from the textual system and use the canonicals by level.
+  echo 6. Use 97_field_findings.txt only when you want to keep lateral findings readable before routing or discarding them.
 )
 
 pause

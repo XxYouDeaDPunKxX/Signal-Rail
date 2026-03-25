@@ -70,9 +70,9 @@ Entrypoint Template
 - first safe move:
 
 Entrypoint Example
-- entrypoint: README.txt
-- what you find there first: the internal entrypoint of the system
-- what that point is really for: orienting yourself before reading canonicals
+- entrypoint: 00_runtime_entry.txt
+- what you find there first: the runtime entry manual of the system
+- what that point is really for: closing valid entry before using the kernel and canonicals
 - first safe move: read it and then move into 06_ai_to_ai.txt
 
 Where Not to Start
@@ -124,7 +124,7 @@ Minimal Runbook Template
 
 Minimal Runbook Example
 - what you want to achieve: open the system safely
-- minimum safe move: read README.txt and then 06_ai_to_ai.txt
+- minimum safe move: read 00_runtime_entry.txt and then 06_ai_to_ai.txt
 - what you should see if it worked: the project frame and the right canonical entrypoints become clear
 
 Surface Map Hygiene

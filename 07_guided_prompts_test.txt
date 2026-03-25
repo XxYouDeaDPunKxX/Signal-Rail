@@ -1,7 +1,8 @@
 GUIDED PROMPTS
 
 1. Common rules
-- Read and follow 06_ai_to_ai.txt.
+- Read 00_runtime_entry.txt first.
+- Then read and follow 06_ai_to_ai.txt.
 - If AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt is present, treat the current folder as a deployed Signal Rail tool instance unless the user closes a different frame.
 - AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt does not identify the host project or the current target by default.
 - Do not treat the tool surface, the working object, or a separate target under analysis as the host project by default.

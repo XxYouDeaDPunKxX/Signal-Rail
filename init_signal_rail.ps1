@@ -89,6 +89,7 @@ if ($resolvedTargetPath -eq $sourceRoot) {
 }
 
 $canonicalFiles = @(
+    "00_runtime_entry.txt",
     "README.txt",
     "AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt",
     "01_orientation.txt",
@@ -193,19 +194,21 @@ if ($customizedFiles.Count -gt 0) {
 
 Write-Host ""
 Write-Host "Recommended entry points:"
-Write-Host "1. Protocol: open 06_ai_to_ai.txt and activate 'read 06_ai_to_ai.txt'."
-Write-Host "2. Frame: close host project, working object, and mode before writing."
-Write-Host "3. Context: AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt reminds you that this folder is the tool, not the host project by default."
+Write-Host "1. Entry: open 00_runtime_entry.txt first."
+Write-Host "2. Protocol: then open 06_ai_to_ai.txt and activate 'read 06_ai_to_ai.txt'."
+Write-Host "3. Frame: close host project, working object, and mode before writing."
+Write-Host "4. Context: AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt reminds you that this folder is the tool, not the host project by default."
 Write-Host ""
 Write-Host "Recommended initial bootstrap:"
-Write-Host "1. Read 06_ai_to_ai.txt first."
-Write-Host "2. Close host project, working object, and mode."
-Write-Host "3. If live source or authority are still unclear, stop and ask before writing."
-Write-Host "4. Fill 01_orientation.txt by describing the host project, not Signal Rail by default."
-Write-Host "5. Fill 03_master_working.txt with current live state, dominant blocker, and next sensible move."
-Write-Host "6. Use 02_protocol_freeze.txt only for identity constants."
-Write-Host "7. Use 04_decision_log.txt only for already-won decisions already in effect."
-Write-Host "8. Use 05_latent_ideas.txt for live material that is not yet stable enough."
-Write-Host "9. Use 08_surface_map.txt to close where the project really lives technically."
-Write-Host "10. Use 09_handoff_reentry.txt for continuity and re-entry, not as canonical truth."
-Write-Host "11. Use 97_field_findings.txt when you want to keep lateral findings readable before routing or discarding them."
+Write-Host "1. Read 00_runtime_entry.txt first."
+Write-Host "2. Read 06_ai_to_ai.txt after entry is valid."
+Write-Host "3. Close host project, working object, and mode."
+Write-Host "4. If live source or authority are still unclear, stop and ask before writing."
+Write-Host "5. Fill 01_orientation.txt by describing the host project, not Signal Rail by default."
+Write-Host "6. Fill 03_master_working.txt with current live state, dominant blocker, and next sensible move."
+Write-Host "7. Use 02_protocol_freeze.txt only for identity constants."
+Write-Host "8. Use 04_decision_log.txt only for already-won decisions already in effect."
+Write-Host "9. Use 05_latent_ideas.txt for live material that is not yet stable enough."
+Write-Host "10. Use 08_surface_map.txt to close where the project really lives technically."
+Write-Host "11. Use 09_handoff_reentry.txt for continuity and re-entry, not as canonical truth."
+Write-Host "12. Use 97_field_findings.txt when you want to keep lateral findings readable before routing or discarding them."

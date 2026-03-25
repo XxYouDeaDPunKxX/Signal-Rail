@@ -6,6 +6,9 @@ Purpose
 - If a hard rule cannot be satisfied safely, stop and ask.
 
 Activation
+- Prerequisite:
+  - read 00_runtime_entry.txt before using this file operationally
+  - if 00_runtime_entry.txt has not been read yet, return there first
 - Exact command: read 06_ai_to_ai.txt
 - Effect:
   - activate Signal Rail protocol
@@ -14,6 +17,7 @@ Activation
   - do not infer the host project automatically
 - If AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt is present, treat the current folder as a deployed Signal Rail instance marker until the user clarifies otherwise.
 - AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt does not identify the host project or the current target by default.
+- If doubt concerns entry validity, minimum read, or correct system reading, return to 00_runtime_entry.txt before proceeding.
 
 1. Identity State
 - Signal Rail is not the host project.
