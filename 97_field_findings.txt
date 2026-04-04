@@ -87,7 +87,8 @@ Failure Condition
 - If entries become mini design docs, conversation logs, or brainstorming blocks, it is being used wrong.
 - If this file becomes the place where things live instead of the place where findings are first kept readable, it is wrong.
 
---- ENTRIES START BELOW ---
+--- ENTRIES START ---
+[TEMPLATE ONLY]
 
 [CATEGORY]
 [short label]
@@ -95,13 +96,18 @@ Failure Condition
 - what:
 - why it matters:
 - note:
+- links to:
+- external reference:
 
+[TEMPLATE ONLY]
 [CATEGORY]
 [short label]
 - where:
 - what:
 - why it matters:
 - note:
+- links to:
+- external reference:
 
 --- ENTRIES END ---
 
@@ -111,6 +117,8 @@ AI SECTION
 - Write here only if the content is a finding emerged during active work and is not yet ready to be treated as project truth or routed into a stronger container.
 - Read this file as a lateral finding layer: useful capture before routing, not a second project memory.
 - Keep each entry small, concrete, and readable.
+- For append-driven writes, insert findings only inside `--- ENTRIES START ---` and `--- ENTRIES END ---`.
+- `[TEMPLATE ONLY]` in the entries zone is scaffold only and does not count as a live finding.
 - Do not leave whole conversations, broad summaries, or design pads here. Extract the finding unit first.
 - Do not use this file as a substitute for 05. If the content is already alive enough to matter as unresolved project material, use 05 instead.
 - Do not use this file as a waiting room for already-routable content. If destination is clear enough, route it.

@@ -49,12 +49,26 @@ Typical Errors
 - Using archive as a substitute for parking, latent, or decision.
 - Confusing historical memory with work that is still active.
 
+--- ENTRIES START ---
+[TEMPLATE ONLY]
+[ARCHIVE]
+[short label]
+- id: A-xx
+- Title:
+- Why It Is Here:
+- Origin:
+- links to:
+- external reference:
+--- ENTRIES END ---
+
 AI SECTION
 
 - This file is not for active work, active unresolved material, parked-soon-useful material, or still-valid active decisions.
 - Write here only if the content is closed, no longer alive, and should remain only as trace, memory, duplicate, or dead material.
 - Read 99 as closed memory only, not as a quiet extension of current work.
 - Local entries in this file use only `A-xx`.
+- For append-driven writes, insert archive entries only inside `--- ENTRIES START ---` and `--- ENTRIES END ---`.
+- `[TEMPLATE ONLY]` in the entries zone is scaffold only and does not count as a live archive entry.
 - Cross-file IDs stay references in `Origin` or `links to`; they do not become new local IDs here.
 - Use `external reference` for useful references outside the canonical set.
 - If this content could still matter later but should stay out of current work for now, use 98.

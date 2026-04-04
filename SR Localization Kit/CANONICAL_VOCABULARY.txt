@@ -19,6 +19,10 @@ How to use it
 - If one critical term still feels wrong, stop and fix it here first.
 - Do not invent local variants file by file.
 - Keep file names, ID families, marker file name, and `Signal Rail` unchanged.
+- Keep structural entry markers unchanged and in English:
+  - `--- ENTRIES START ---`
+  - `--- ENTRIES END ---`
+- These marker tokens are not translatable vocabulary items.
 
 Core structural terms
 

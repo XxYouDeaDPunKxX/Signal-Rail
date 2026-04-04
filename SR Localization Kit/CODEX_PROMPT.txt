@@ -16,6 +16,8 @@ Rules:
 - Keep `Signal Rail` as the system name.
 - Keep `AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt` as the marker file name.
 - Keep the canonical structure unchanged.
+- Keep `--- ENTRIES START ---` and `--- ENTRIES END ---` unchanged and in English.
+- For append-driven canonicals (`04`, `05`, `08`, `09`, `97`, `98`, `99`), preserve one valid `ENTRIES START/END` pair and write entries only inside that zone.
 
 Localize:
 - `00_runtime_entry.txt`
@@ -34,6 +36,7 @@ Do not localize by default:
 - this `SR Localization Kit` support folder
 - validator internals
 - baseline support tooling used only to perform localization
+- structural entry markers `--- ENTRIES START ---` and `--- ENTRIES END ---`
 
 Do not invent local synonyms file by file.
 Use one stable vocabulary across the whole kit.

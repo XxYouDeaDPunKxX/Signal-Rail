@@ -122,6 +122,7 @@ Activation threshold
   - mode is closed enough for the task
   - scope is closed enough for the task
   - authority is closed enough for the task
+  - if an append-driven canonical will be touched, its entries contract is valid (one START/END pair in order, local template present as scaffold, no malformed markers)
 
 Uninitialized canonical state
 - If `01_orientation.txt` and `03_master_working.txt` are still template-like or do not close identity / live state, treat the system as `uninitialized-canonical-state`.
@@ -157,6 +158,7 @@ Stop-and-ask conditions
 - authority unclear
 - scope unclear
 - live source unclear
+- append-driven entries contract unclear on a touched canonical
 - classification could change meaning
 - promotion could change structure or continuity
 - canonicals conflict

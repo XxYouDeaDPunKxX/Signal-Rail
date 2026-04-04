@@ -31,6 +31,20 @@ function Add-Finding {
     }) | Out-Null
 }
 
+function Get-LineNumberFromIndex {
+    param(
+        [string]$Text,
+        [int]$Index
+    )
+
+    if ($Index -lt 0) {
+        return 0
+    }
+
+    $prefix = $Text.Substring(0, [Math]::Min($Index, $Text.Length))
+    return ([regex]::Matches($prefix, "`n")).Count + 1
+}
+
 function Get-BootstrapPlaceholders {
     param([string]$BootstrapText)
 
@@ -142,6 +156,7 @@ foreach ($file in $files) {
 }
 
 $bootstrapFindings = New-Object 'System.Collections.Generic.List[object]'
+$markerFindings = New-Object 'System.Collections.Generic.List[object]'
 $bootstrapPath = Join-Path $resolvedTargetPath "init_signal_rail.ps1"
 $orientationPath = Join-Path $resolvedTargetPath "01_orientation.txt"
 $masterWorkingPath = Join-Path $resolvedTargetPath "03_master_working.txt"
@@ -175,6 +190,51 @@ if (Test-Path -LiteralPath $bootstrapPath) {
     Add-Finding -Bucket $bootstrapFindings -Path "init_signal_rail.ps1" -LineNumber 0 -Kind "bootstrap_placeholder" -Text "Bootstrap script not found."
 }
 
+$markerContractFiles = @(
+    "04_decision_log.txt",
+    "05_latent_ideas.txt",
+    "08_surface_map.txt",
+    "09_handoff_reentry.txt",
+    "97_field_findings.txt",
+    "98_parking.txt",
+    "99_archive.txt"
+)
+
+foreach ($markerFile in $markerContractFiles) {
+    $fullPath = Join-Path $resolvedTargetPath $markerFile
+    if (-not (Test-Path -LiteralPath $fullPath)) {
+        Add-Finding -Bucket $markerFindings -Path $markerFile -LineNumber 0 -Kind "marker_contract" -Text "Required append-driven canonical file not found."
+        continue
+    }
+
+    $text = Get-Content -Raw -LiteralPath $fullPath
+    $legacyMatches = [regex]::Matches($text, '(?m)^--- ENTRIES START BELOW ---\s*$')
+    if ($legacyMatches.Count -gt 0) {
+        $line = Get-LineNumberFromIndex -Text $text -Index $legacyMatches[0].Index
+        Add-Finding -Bucket $markerFindings -Path $markerFile -LineNumber $line -Kind "marker_contract" -Text "Legacy marker '--- ENTRIES START BELOW ---' found. Use '--- ENTRIES START ---'."
+    }
+
+    $startMatches = [regex]::Matches($text, '(?m)^--- ENTRIES START ---\s*$')
+    $endMatches = [regex]::Matches($text, '(?m)^--- ENTRIES END ---\s*$')
+
+    if ($startMatches.Count -ne 1) {
+        $line = if ($startMatches.Count -gt 0) { Get-LineNumberFromIndex -Text $text -Index $startMatches[0].Index } else { 0 }
+        Add-Finding -Bucket $markerFindings -Path $markerFile -LineNumber $line -Kind "marker_contract" -Text "Expected exactly 1 '--- ENTRIES START ---' marker, found $($startMatches.Count)."
+    }
+
+    if ($endMatches.Count -ne 1) {
+        $line = if ($endMatches.Count -gt 0) { Get-LineNumberFromIndex -Text $text -Index $endMatches[0].Index } else { 0 }
+        Add-Finding -Bucket $markerFindings -Path $markerFile -LineNumber $line -Kind "marker_contract" -Text "Expected exactly 1 '--- ENTRIES END ---' marker, found $($endMatches.Count)."
+    }
+
+    if ($startMatches.Count -eq 1 -and $endMatches.Count -eq 1) {
+        if ($startMatches[0].Index -ge $endMatches[0].Index) {
+            $line = Get-LineNumberFromIndex -Text $text -Index $startMatches[0].Index
+            Add-Finding -Bucket $markerFindings -Path $markerFile -LineNumber $line -Kind "marker_contract" -Text "Marker order invalid: ENTRIES START must appear before ENTRIES END."
+        }
+    }
+}
+
 Write-Host ""
 Write-Host "SR localization audit"
 Write-Host "Target: $resolvedTargetPath"
@@ -183,8 +243,8 @@ Write-Host "Scope: core non-HTML Signal Rail files only"
 Write-Host "Mode: baseline-English residue and bootstrap/template consistency check"
 Write-Host ""
 
-if ($findings.Count -eq 0 -and $bootstrapFindings.Count -eq 0) {
-    Write-Host "No baseline-English localization drift found in the localized core."
+if ($findings.Count -eq 0 -and $bootstrapFindings.Count -eq 0 -and $markerFindings.Count -eq 0) {
+    Write-Host "No baseline-English localization drift or marker-contract issues found in the localized core."
     exit 0
 }
 
@@ -202,6 +262,14 @@ if ($bootstrapFindings.Count -gt 0) {
     Write-Host "These findings show placeholders expected by the bootstrap that were not found in the localized templates."
     foreach ($finding in $bootstrapFindings) {
         Write-Host "- [$($finding.kind)] $($finding.path) -> $($finding.text)"
+    }
+}
+
+if ($markerFindings.Count -gt 0) {
+    Write-Host "Marker contract findings:"
+    Write-Host "These findings show missing, duplicate, malformed, or misordered ENTRIES markers in append-driven canonicals."
+    foreach ($finding in $markerFindings) {
+        Write-Host "- [$($finding.kind)] $($finding.path):$($finding.line) -> $($finding.text)"
     }
 }
 Write-Host ""

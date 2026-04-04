@@ -66,6 +66,21 @@ Failure Condition
 - If you are updating live state in 09 instead of 03, you are using it wrong.
 - If 09 becomes the place where things live instead of the place where things transit, it is wrong.
 
+--- ENTRIES START ---
+[TEMPLATE ONLY]
+[SESSION SNAPSHOT]
+[short label]
+- date:
+- what was done:
+- what remains open:
+- next move:
+- blocker:
+- files modified:
+- active risk:
+- links to:
+- external reference:
+--- ENTRIES END ---
+
 AI SECTION
 
 - This file is not for project identity, stable project constants, current live work as project truth, taken decisions, technical surface authority, parked material, or archive history.
@@ -77,6 +92,8 @@ AI SECTION
 - 09 may preserve session-specific frame needed to re-enter the work cleanly.
 - IDs cited here stay continuity references only; 09 does not mint new canonical authority from them.
 - Use `external reference` for useful references outside the canonical set.
+- For append-driven writes, insert handoff snapshots only inside `--- ENTRIES START ---` and `--- ENTRIES END ---`.
+- `[TEMPLATE ONLY]` in the entries zone is scaffold only and does not count as a live handoff snapshot.
 - 09 may not override 02, 03, 04, or 08.
 - Do not turn 09 into a second live workspace.
 - Canonical updates must be routed separately.

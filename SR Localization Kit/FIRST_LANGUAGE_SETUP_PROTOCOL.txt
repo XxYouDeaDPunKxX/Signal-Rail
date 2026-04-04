@@ -36,6 +36,8 @@ Structural invariants
 - Keep `Signal Rail` as the system name.
 - Keep `AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt` as the marker file name.
 - Keep the canonical structure unchanged.
+- Keep `--- ENTRIES START ---` and `--- ENTRIES END ---` unchanged and in English.
+- Enforce these entry markers in append-driven canonicals: `04`, `05`, `08`, `09`, `97`, `98`, `99`.
 
 What must be localized
 - `00_runtime_entry.txt`
@@ -54,6 +56,7 @@ What must not be localized
 - file names
 - ID families
 - marker file name
+- `--- ENTRIES START ---` and `--- ENTRIES END ---` marker lines
 - host-project content
 - live project truth already written inside an active instance
 - this `SR Localization Kit` support folder, unless you are explicitly rebuilding the localization tooling itself

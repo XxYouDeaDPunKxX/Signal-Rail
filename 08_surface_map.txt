@@ -176,6 +176,17 @@ Typical Errors
 - Leaving it too vague to be useful.
 - Starting from the wrong point just because it looks closer or more convenient.
 
+--- ENTRIES START ---
+[TEMPLATE ONLY]
+[TECHNICAL MAP UPDATE]
+[short label]
+- type:
+- technical map update:
+- why does this belong in the technical map?:
+- links to:
+- external reference:
+--- ENTRIES END ---
+
 AI SECTION
 
 - This file is not for project identity, stable project constants, current live work, taken decisions, unresolved ideas, or full documentation.
@@ -184,6 +195,8 @@ AI SECTION
 - Section titles in this file are operational anchors for the surface map; keep them stable and avoid unnecessary duplicates.
 - `links to` must point only to real canonical files or real IDs.
 - Use `external reference` for useful references outside the canonical set or outside the local surface.
+- For append-driven writes, insert technical map entries only inside `--- ENTRIES START ---` and `--- ENTRIES END ---`.
+- `[TEMPLATE ONLY]` in the entries zone is scaffold only and does not count as a live technical map entry.
 - Open slots are acceptable only while a block is still clearly template-like; they should not become permanent noise in a live surface map.
 - If this content defines what the project is, use 01.
 - If this content defines a stable project constant, use 02.

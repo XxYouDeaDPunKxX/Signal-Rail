@@ -101,11 +101,31 @@ Typical Errors
 - Treating an AI suggestion or a strong preference as if it were already a decision.
 - Using 04 to anticipate a line that has not really entered the work yet.
 
+--- ENTRIES START ---
+[TEMPLATE ONLY]
+[DECISION]
+[short label]
+- id: D-xx
+- date:
+- state:
+- decision:
+- won against:
+- touches:
+- links to:
+- external reference:
+- impact:
+- why:
+- risk if wrong:
+- reopening trigger:
+--- ENTRIES END ---
+
 AI SECTION
 
 - This file is not for preferences, promising ideas, unresolved options, current live work, or decisions that have not yet clearly won.
 - Write here only if the content records a decision that has already won against a real alternative, is already being treated as real in the project, and is stable enough to be recorded as such.
 - Local entries in this file use only `D-xx`.
+- For append-driven writes, insert decision entries only inside `--- ENTRIES START ---` and `--- ENTRIES END ---`.
+- `[TEMPLATE ONLY]` in the entries zone is scaffold only and does not count as a live decision entry.
 - Cross-file IDs stay references in `links to`; they do not become new local IDs here.
 - Use `external reference` for useful references outside the canonical set; do not widen `links to` for them.
 - If this content defines what the project is or how it should be understood, use 01.

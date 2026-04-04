@@ -27,6 +27,8 @@ Structure
 - ID families unchanged
 - marker file name unchanged
 - system name still `Signal Rail`
+- `--- ENTRIES START ---` and `--- ENTRIES END ---` kept exactly in English
+- append-driven canonicals (`04`, `05`, `08`, `09`, `97`, `98`, `99`) contain one valid `ENTRIES START/END` pair each
 
 Vocabulary
 - no mixed field labels

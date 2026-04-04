@@ -9,6 +9,8 @@ GUIDED PROMPTS
 - If a canonical file contains AI QUICK NOTE and AI SECTION, use the AI SECTION as the operational rule source for that file.
 - Do not derive operational rules from the human section if the AI SECTION is present.
 - When structuring canonical content, keep `links to` for canonical/internal references and use `external reference` for useful references outside the canonical set.
+- For append-driven canonicals (`04`, `05`, `08`, `09`, `97`, `98`, `99`), insert new entries only inside the marker zone between `--- ENTRIES START ---` and `--- ENTRIES END ---`.
+- `--- ENTRIES START ---` and `--- ENTRIES END ---` are structural tokens and must remain in English in every localization.
 - Ask one question at a time.
 - Keep each question short.
 - Allow free-form answers.

@@ -32,6 +32,7 @@ Update It When
 - Something parked stops making sense and should be archived.
 
 Template
+
 - id: P-01
 - Title:
 - Why It Is Here:
@@ -50,12 +51,26 @@ Typical Errors
 - Leaving an entry without a reactivation condition.
 - Using 98 to lighten the present instead of understanding where something truly belongs.
 
+--- ENTRIES START ---
+[TEMPLATE ONLY]
+[PARKING]
+[short label]
+- id: P-xx
+- Title:
+- Why It Is Here:
+- links to:
+- external reference:
+- Next Step to Reactivate It:
+--- ENTRIES END ---
+
 AI SECTION
 
 - This file is not for current live work, active unresolved ideas, taken decisions, or dead historical material.
 - Write here only if the content could still matter later but should not affect current work now.
 - Read 98 as still useful but not active now.
 - Local entries in this file use only `P-xx`.
+- For append-driven writes, insert parking entries only inside `--- ENTRIES START ---` and `--- ENTRIES END ---`.
+- `[TEMPLATE ONLY]` in the entries zone is scaffold only and does not count as a live parking entry.
 - Cross-file IDs stay references in `links to`; they do not become new local IDs here.
 - Use `external reference` for useful references outside the canonical set.
 - If this content is still active, unresolved, or still shaping current choices, use 05.

@@ -87,6 +87,14 @@ Activation
 - Canonical IDs stay local to their container family: 02 uses `F-xx`, 04 uses `D-xx`, 05 uses `L-xx`, 98 uses `P-xx`, 99 uses `A-xx`, and cross-file references stay references instead of becoming new local IDs.
 - `links to` is for canonical, internal, or explicitly host-safe references that the system should validate as part of canonical reading.
 - `external reference` is for useful references outside the canonical set or outside the local surface; it does not carry canonical authority by default.
+- Append-driven entries contract:
+  - 04, 05, 08, 09, 97, 98, and 99 are append-driven through one entries zone per file.
+  - Each append-driven file must contain exactly one `--- ENTRIES START ---` and one `--- ENTRIES END ---`, in correct order.
+  - Each append-driven file keeps its own local empty template inside the entries zone; do not normalize all files into one generic template.
+  - `[TEMPLATE ONLY]` blocks are scaffolding, not live entries, and carry no canonical authority.
+  - Structured read must not count `[TEMPLATE ONLY]` blocks as real entries.
+  - Canonical write for append-driven files must insert entries only inside the entries zone.
+  - If marker contract is missing, duplicated, malformed, or ambiguous, stop and ask before writing.
 - If a unit has no clear destination yet, use 05.
 - If a unit shows repeated structural relevance, do not leave it unframed in 05 by default.
 - 05 gravity is a controlled exception to mechanical classification.

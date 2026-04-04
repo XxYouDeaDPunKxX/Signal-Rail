@@ -109,12 +109,31 @@ Typical Errors
 - Treating a note as strong just because it is well written.
 - Treating an AI evaluation as final without human validation.
 
+--- ENTRIES START ---
+[TEMPLATE ONLY]
+[IDEA]
+[short label]
+- id: L-xx
+- Title:
+- Thesis:
+- Why It Is Strong:
+- What Is Still Missing:
+- Likely Direction:
+- State:
+- links to:
+- external reference:
+- Next Step:
+- Reopening Trigger:
+--- ENTRIES END ---
+
 AI SECTION
 
 - This file is not for project identity, stable project constants, decisions already taken, current live work, parked material, or archived history.
 - Write here only if the content matters but does not yet have a final home: it is still alive, still unresolved, and not yet stable enough for 03, 04, 98, or 99.
 - Read this file as the mobile layer of the project: the material still has motion, weight, or possible destination, but not enough structural stability yet.
 - Local entries in this file use only `L-xx`.
+- For append-driven writes, insert latent entries only inside `--- ENTRIES START ---` and `--- ENTRIES END ---`.
+- `[TEMPLATE ONLY]` in the entries zone is scaffold only and does not count as a live latent entry.
 - Cross-file IDs stay references in `links to`, `origin`, or body text; they do not become new local IDs here.
 - Use `external reference` for useful references outside the canonical set or outside the local surface.
 - If this content defines what the project is or how it should be understood, use 01.
