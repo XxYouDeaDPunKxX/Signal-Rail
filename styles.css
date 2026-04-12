@@ -563,6 +563,11 @@ li {
     linear-gradient(180deg, rgba(217, 203, 178, 0.96), rgba(230, 220, 203, 0.96));
 }
 
+.workstation-band {
+  background:
+    linear-gradient(180deg, rgba(226, 212, 187, 0.96), rgba(238, 228, 210, 0.96));
+}
+
 .boundary-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -592,6 +597,10 @@ li {
 .exit-links a {
   text-decoration: none;
   font-family: "IBM Plex Mono", "Courier New", monospace;
+}
+
+.workstation-links {
+  margin-top: 1rem;
 }
 
 @media (max-width: 1100px) {
