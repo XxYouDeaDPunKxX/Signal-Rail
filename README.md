@@ -4,79 +4,262 @@
 
 > Think. Throw. Unearth.
 
-Most AI-assisted projects don't fail because the AI is bad.  
-They fail because the context collapses.
+Signal Rail is a plain-text document governance system for personal and project material.
 
-Ideas pile up with no weight attached. Decisions scatter across chats. A passing thought gets treated like a structural constraint. A real constraint gets buried in generic discussion. The longer the project runs, the harder it becomes to recover the thread, and the more time gets spent rebuilding context instead of moving the work forward.
+It gives your work separate rails for current state, decisions, unresolved material, hard constraints, surface maps, handoff, parking, and archive.
 
-Signal Rail exists to stop that collapse.
+The point is not to make a project smaller than it is.
 
-It is a plain-text document system that gives different kinds of project material different places to live, with different levels of authority. It does not make a project simpler than it is. It makes it more readable, more continuous, and much harder to lose while it grows and changes shape.
+The point is to keep the material readable while the project grows, branches, changes shape, and comes back after interruption.
 
----
+## 🚀 Start here
 
-## 🧭 How it actually works
+Project documentation usually breaks when everything lives in the same undifferentiated space.
 
-You start by giving the agent the runtime entry layer, then the kernel, and then work from a real project conversation.
+A note becomes a decision.  
+A possibility becomes a constraint.  
+A current blocker gets buried under old context.  
+A useful thread disappears because it was never placed anywhere stable.
 
-> *"I have an idea - a counter in position X that pulls data from Y."*
+Signal Rail prevents that by giving material a destination before it becomes noise.
 
-The agent weighs it and places it in the right file at the right level. If it is still a hypothesis, it lands in `05_latent_ideas.txt` - alive, tracked, not promoted too early. If it is already driving current work, it goes into `03_master_working.txt`. If it has already won against a real alternative and is already in effect, it goes into `04_decision_log.txt`.
+It asks one practical question:
 
-You think out loud. Signal Rail governs where things land.
+```text
+What kind of material is this, and where should it live?
+```
 
-That is the loop: **Think. Throw. Unearth.**
+The answer changes the file.
 
-Three sessions later, you are working on something else entirely. You ask the agent to read `00_runtime_entry.txt`, then `06_ai_to_ai.txt`.
+A current live line belongs in `03_master_working.txt`.  
+A decision that has already won belongs in `04_decision_log.txt`.  
+A still-mobile but important direction belongs in `05_latent_ideas.txt`.  
+A hard-to-reopen identity constant belongs in `02_protocol_freeze.txt`.  
+A technical entrypoint or sensitive surface belongs in `08_surface_map.txt`.
 
-It enters `05_latent_ideas.txt`, moves through ideas from weeks ago - each one carrying a state, a weight, and a likely direction - and surfaces the one that fits exactly what you are doing now.
-
-You did not remember it was there. Without the system, the chances are close to zero. With the system, it is just a read.
-
----
-
-## 🧱 Three things worth naming
-
-**The freeze.**  
-`02_protocol_freeze.txt` holds the identity constants of the project: the points that, if removed, would make the project stop being itself. Not a preference list. Not strong ideas. The line the system does not cross without explicit human authority. The agent treats it as non-negotiable.
-
-**The latent layer.**  
-`05_latent_ideas.txt` is not a bin for the undecided. It is a pressure buffer: ideas enter as *new*, mature to *to review*, and only leave toward a stronger canonical file when they are solid enough. Nothing is lost. Nothing contaminates the present before it has earned its place there.
-
-**The entry layer.**  
-`00_runtime_entry.txt` closes valid entry, minimum read, and reading boundaries before the kernel becomes operative. It is the threshold between opening the system and moving inside it.
-
-**The kernel.**  
-`06_ai_to_ai.txt` is not written for the human operator. It is written for the agent. It governs activation, mode discipline, canonical authority, and the conditions under which the agent must stop and ask. Once loaded, the agent does not need to be micro-managed. It knows the structure and works inside it.
+Nothing is promoted just because it sounds strong.
 
 ## 🚀 Quick start
 
-1. Run `init_signal_rail.bat` on Windows to bootstrap a new instance in your target folder.
-2. Open a chat with your AI and say: `read 00_runtime_entry.txt`
-3. Then move into: `read 06_ai_to_ai.txt`
-4. Let the agent close the minimum frame: what the project is, what you are working on, and which mode you are in.
-5. Start from there.
+Create a Signal Rail instance in the project area you want to govern.
 
-For a non-English version, use **SR Localization Kit** to create a separate localized copy before you begin. Do not localize the baseline in place.
+You can do that in two ways:
 
-Signal Rail exists here as the clean baseline kit, not as a live host-project surface by default.
+### 🛠️ Windows bootstrap
+
+Run:
+
+```text
+init_signal_rail.bat
+```
+
+Use this when you want the kit to create the instance structure for you.
+
+### 📄 Manual copy
+
+You can also copy the needed Signal Rail files into the target folder yourself.
+
+Manual copy is valid, but the copied instance must still preserve the required file names, marker structure, canonical roles, and entry flow.
+
+After the instance exists:
+
+1. Open an AI chat inside the working context.
+2. Ask the agent to read:
+
+```text
+00_runtime_entry.txt
+```
+
+3. Then ask it to read:
+
+```text
+06_ai_to_ai.txt
+```
+
+4. Let the agent close the minimum frame:
+   - host project
+   - working object
+   - active mode
+   - source scope
+   - authority
+5. Start the work from that closed frame.
+
+For a non-English version, use **SR Localization Kit** to create a separate localized copy before you begin.
+
+Do not localize the baseline in place.
+
+## 🧭 Main operating mode
+
+Signal Rail is mainly designed to be operated with an AI agent during real work.
+
+You think, work, speak, paste material, or bring a messy source set.
+
+The agent reads the Signal Rail entry layer, activates the lateral kernel, closes the working frame, and helps route material into the right document without mixing levels.
+
+The human stays in charge of meaning, authority, and approval.
+
+The agent helps with:
+
+- 🧭 closing the active frame
+- 🧩 separating material into units
+- ⚖️ distinguishing current work, decision, idea, freeze, handoff, and map
+- 🛑 stopping before unsafe promotion
+- ✍️ preparing or applying document updates when authority is clear
+- 🔁 recovering continuity without treating continuity as truth
+
+This is the main use case: Signal Rail as a governed document system operated interactively while the project is alive.
 
 ## 🖥️ Offline workstation
 
-Signal Rail also includes an optional offline workstation: `signal_rail_workstation_final.html`.
+Signal Rail also includes a local workstation:
 
-It gives the operator a direct local workstation for reading canonicals, checking runtime state, staging writes, previewing changes, and writing back to the matching `.txt` files when live folder access is available.
+[`signal_rail_workstation_final.html`](signal_rail_workstation_final.html)
 
-It does not replace the canonicals or change their authority. It makes them easier to inspect and maintain without working blind.
+The workstation gives the operator a clearer human surface for maintaining a live Signal Rail instance.
 
-Open [signal_rail_workstation_final.html](signal_rail_workstation_final.html) when you want a clearer local way to maintain a live Signal Rail instance.
+Use it to:
 
----
+- 📚 read canonical files
+- 🔎 inspect runtime state
+- ✍️ stage edits
+- 👁️ preview changes
+- 💾 write back to the matching `.txt` files when local folder access is available
+
+The workstation does not replace the canonicals.
+
+It does not change authority.
+
+It exists because direct manual maintenance is possible, but easy to get wrong when routing, markers, authority, and promotion rules matter.
+
+## ✍️ Manual editing
+
+Signal Rail files are plain text.
+
+You can maintain them with a simple editor.
+
+Manual editing is a fallback, not the safest default.
+
+If you edit by hand, you must respect:
+
+- canonical destination
+- file authority
+- local templates
+- entry markers
+- append zones
+- ID families
+- source authority
+- promotion boundaries
+
+For append-driven files, write new live entries only inside their entry zone.
+
+```text
+--- ENTRIES START ---
+...
+--- ENTRIES END ---
+```
+
+Do not turn manual editing into free-form note taking.
+
+Signal Rail works because the rails stay strict.
+
+## 🧰 Guided operating paths
+
+`07_guided_prompts_test.txt` provides guided entry paths for higher-risk operating situations.
+
+These are not casual prompt examples.
+
+They exist to help the agent ask the smallest useful questions before reading, routing, rewriting, or rebuilding state.
+
+Useful paths include:
+
+| Situation | What the guided path protects |
+|---|---|
+| 🆕 New or near-blank instance | Opens a Signal Rail instance without inventing project reality. |
+| 🧭 Safe session start | Closes host project, authority, working object, mode, goal, and source scope before action. |
+| 🧱 Confused sources and authority rebuild | Separates messy sources, timeline uncertainty, live state, and governing authority before ingest. |
+| 🧪 Review before rewrite | Prevents cleanup from rewriting material whose governing source is not closed. |
+| 🗺️ Destination closure | Routes extracted material by nature, stability, and authority instead of by file proximity. |
+
+Use these paths when a normal session opening is not enough.
+
+## 🛤️ The rails
+
+Signal Rail separates material by role.
+
+| Rail | File | What belongs there |
+|---|---|---|
+| 🚪 Runtime entry | `00_runtime_entry.txt` | Valid entry, minimum read, and reading boundaries. |
+| 🧭 Orientation | `01_orientation.txt` | Project identity, perimeter, and reading frame. |
+| 🧊 Freeze | `02_protocol_freeze.txt` | Identity constants that should be hard to reopen. |
+| 🔥 Master working | `03_master_working.txt` | Current live state, blocker, active work, and next move. |
+| ⚖️ Decision log | `04_decision_log.txt` | Choices already taken, already in effect, and already won against alternatives. |
+| 🌱 Latent ideas | `05_latent_ideas.txt` | Important unresolved material that still needs motion or placement. |
+| 🧠 Lateral kernel | `06_ai_to_ai.txt` | Agent operating behavior inside a Signal Rail instance. |
+| 🧰 Guided prompts | `07_guided_prompts_test.txt` | Guided paths for safer starts, rebuilds, reviews, and routing passes. |
+| 🗺️ Surface map | `08_surface_map.txt` | Real technical topology, entrypoints, sensitive surfaces, and minimal runbook. |
+| 🔁 Handoff | `09_handoff_reentry.txt` | Re-entry support and continuity, not canonical project truth. |
+| 🧲 Field findings | `97_field_findings.txt` | Lateral captures during an active pass before routing or discard. |
+| 📌 Parking | `98_parking.txt` | Useful material that is not active now. |
+| 📦 Archive | `99_archive.txt` | Closed, historical, duplicate, or no-longer-live material. |
+
+## 🧠 About the kernel
+
+`06_ai_to_ai.txt` is a lateral kernel.
+
+It is not the host project.
+
+It is not a global personality file.
+
+It does not make every AI answer follow Signal Rail everywhere.
+
+It governs the agent while the agent is operating inside a Signal Rail instance, so the agent can read, stop, ask, route, propose, and write without confusing document levels.
+
+This is why Signal Rail stays light.
+
+The kernel becomes active in the right context, for the right folder, with the right entry layer.
+
+It does not turn the whole AI session into a permanent document-management contract outside Signal Rail.
+
+## 🧱 Baseline, instance, host project
+
+Keep these separate.
+
+| Surface | Meaning |
+|---|---|
+| Clean baseline kit | This repository. The reusable Signal Rail source. |
+| Deployed instance | A copy of Signal Rail used inside or beside a real project. |
+| Host project | The actual project being governed. |
+| Workstation | Optional local interface for reading, staging, previewing, and writing a live instance. |
+
+A deployed instance marker only says that the folder is a Signal Rail instance.
+
+It does not identify the host project by itself.
+
+The agent must still close the host project, working object, mode, scope, and authority before substantive action.
+
+## 🧯 What Signal Rail prevents
+
+Signal Rail is strict because project material becomes dangerous when level and authority blur.
+
+These are the failures it blocks:
+
+- a strong sentence becoming a decision
+- a live blocker becoming project identity
+- a temporary solution becoming freeze
+- a hypothesis entering current work too early
+- a handoff note becoming canonical truth
+- a technical map becoming orientation
+- a clean rewrite becoming less true than the messy source
+- a deployed instance being mistaken for the host project
+
+Signal Rail does not route material by convenience.
+
+It routes by nature, stability, and authority.
 
 <details>
-<summary><strong>⚙️ Full canonical reference</strong></summary>
+<summary><strong>⚙️ Technical canonical reference</strong></summary>
 
-### 📚 Canonical files
+## 📚 Canonical files
 
 `01_orientation.txt`  
 Project identity, perimeter, and reading frame. This is where the project remains understandable as itself.
@@ -88,7 +271,7 @@ Identity constants. The points that, if removed, would make the project stop bei
 The current live state of the project: where it is now, what is active, what is blocking it, and what the next sensible move is.
 
 `04_decision_log.txt`  
-Already-won decisions. Not preferences, not strong possibilities - choices that have already beaten a real alternative and are already in effect.
+Already-won decisions. Not preferences, not strong possibilities: choices that have already beaten a real alternative and are already in effect.
 
 `05_latent_ideas.txt`  
 Material that matters but is still mobile. Where live but unresolved ideas stay visible without being promoted too early.
@@ -100,7 +283,7 @@ The real technical map: entrypoints, sensitive surfaces, critical dependencies, 
 Short continuity between sessions. Useful for re-entry, not canonical project truth.
 
 `97_field_findings.txt`  
-Lateral captures during an active pass - signals, seeds, refinements - before routing or discarding them.
+Lateral captures during an active pass: signals, seeds, refinements, and observations before routing or discarding.
 
 `98_parking.txt`  
 Not active now, could still matter later.
@@ -108,44 +291,49 @@ Not active now, could still matter later.
 `99_archive.txt`  
 Closed, historical, no-longer-live.
 
-### 🧠 Kernel and guidance
+## 🧠 Kernel and guidance
 
 `00_runtime_entry.txt`  
 Runtime entry manual. Closes valid entry and correct system reading before the kernel becomes operative.
 
 `06_ai_to_ai.txt`  
-The operating kernel for agent behavior inside Signal Rail. How the agent reads, stops, asks, proposes, and writes.
+The operating kernel for agent behavior inside Signal Rail. It governs how the agent reads, stops, asks, proposes, and writes.
 
 `07_guided_prompts_test.txt`  
-Guided prompts and safer opening flows for tighter, less chaotic session starts.
+Guided prompts and safer opening flows for starts, bootstraps, source rebuilds, review-before-rewrite passes, and destination closure.
 
 `AI_TO_AI__DEPLOYED_INSTANCE_SIGNAL_RAIL.txt`  
-Marker file. Identifies a folder as a deployed Signal Rail instance. Does not identify the host project or authoritative source by itself.
+Marker file. Identifies a folder as a deployed Signal Rail instance. It does not identify the host project or authoritative source by itself.
 
-### Runtime mechanics
+## 🧭 Runtime mechanics
 
-Signal Rail is not only a set of containers. It also has a runtime shape:
-
-| Surface | What it does |
-| --- | --- |
-| `00_runtime_entry.txt` | Closes valid entry, minimum read, and reading boundaries before the rest of the system is used operationally. |
-| `06_ai_to_ai.txt` | Governs shared execution behavior once entry is valid. |
-| `AI QUICK NOTE` + `AI SECTION` blocks | Give the local operational rule source for a specific canonical file. |
-| Canonical files | Carry authority-bearing project truth at different levels. |
-| Support files | Remain useful without claiming the same truth status as canonicals. |
-
-In practice, the system now opens like this:
+Signal Rail opens through a controlled runtime path:
 
 1. `00_runtime_entry.txt` closes how to enter.
 2. `06_ai_to_ai.txt` closes how the agent may move.
 3. Canonicals and support files are then read according to task sensitivity.
 
-### Authority and routing model
+Minimum read before substantive action protects the project from wrong entry.
 
-Signal Rail does not route material by convenience. It routes by **nature**, **stability**, and **authority**.
+Reading does not authorize writing.
+
+Understanding does not authorize promotion.
+
+## ⚖️ Authority and routing model
+
+Signal Rail does not route material by convenience.
+
+It routes by:
+
+- nature
+- stability
+- authority
+- destination
+- current mode
+- source closure
 
 | If the material is... | Ask first... | Likely destination |
-| --- | --- | --- |
+|---|---|---|
 | project identity | does this define what the project is? | `01_orientation.txt` |
 | hard-to-reopen constant | would removing this change project identity? | `02_protocol_freeze.txt` |
 | current live work | is this already guiding present work? | `03_master_working.txt` |
@@ -153,12 +341,18 @@ Signal Rail does not route material by convenience. It routes by **nature**, **s
 | live but unresolved | does it matter, but still need to stay mobile? | `05_latent_ideas.txt` |
 | technical topology | is this about where to enter, what is sensitive, or what is minimally required to work safely? | `08_surface_map.txt` |
 | continuity only | is this mainly for handoff or re-entry? | `09_handoff_reentry.txt` |
+| out of cycle but still useful | is it not active now, but worth keeping available? | `98_parking.txt` |
+| closed or historical | is it no longer live? | `99_archive.txt` |
 
-That is why Signal Rail distinguishes containers so aggressively: a good sentence is not yet a decision, a strong idea is not yet freeze, and continuity is not the same thing as truth.
+A good sentence is not yet a decision.
 
-### Modes, minimum read, and safety
+A strong idea is not yet freeze.
 
-The kernel is strict about a few things because they are what prevent drift:
+Continuity is not the same thing as truth.
+
+## 🛑 Modes, minimum read, and safety
+
+The kernel is strict about a few things because they prevent document drift:
 
 - one active mode at a time
 - minimum read before substantive action
@@ -166,41 +360,73 @@ The kernel is strict about a few things because they are what prevent drift:
 - no inference of authority from freshness, cleanliness, or confidence
 - fail-closed behavior on meaningful ambiguity
 
-This also means Signal Rail is not a "fill in the files" system. It is a bounded operating model:
+Signal Rail is not a “fill in the files” system.
+
+It is a bounded operating model:
 
 - read enough to close frame
 - extract before classifying
 - classify before promoting
 - delay safely instead of forcing the wrong destination
 
-### 🛠️ Bootstrap
+## 🧱 Append-driven files
+
+Append-driven canonicals use one entries zone.
+
+New live entries must go inside:
+
+```text
+--- ENTRIES START ---
+...
+--- ENTRIES END ---
+```
+
+The marker contract must stay valid:
+
+- exactly one start marker
+- exactly one end marker
+- correct order
+- local template preserved as scaffold
+- `[TEMPLATE ONLY]` does not count as a live entry
+
+If the marker contract is missing, duplicated, malformed, or ambiguous, stop before writing.
+
+## 🛠️ Bootstrap
 
 `init_signal_rail.bat`  
 Windows launcher. Gets you in.
 
 `init_signal_rail.ps1`  
-Performs the actual bootstrap logic. Does the real work.
+Performs the bootstrap logic.
 
-### 🌐 Localization Kit
+## 🌐 Localization Kit
 
-`SR Localization Kit` handles one specific job: turning the international baseline into one personal localized copy.
+`SR Localization Kit` handles one job: turning the international baseline into one personal localized copy.
 
-The intended flow is:
+Intended flow:
+
 1. keep the baseline clean
 2. create a separate copy
 3. localize the copy
 4. validate the result
 5. work from that copy
 
-It is not a runtime translation layer.  
+It is not a runtime translation layer.
+
 It is not a way to relocalize a live instance in place.
 
-### 🧭 Operational boundaries
+## 🧭 Operational boundaries
 
-The kit repository is not the host project.  
-A deployed Signal Rail instance is not the same thing as the clean baseline repository.  
-A folder marked as a deployed instance does not identify the host project by itself.  
-Entry validity is closed in `00_runtime_entry.txt`; execution behavior is governed in `06_ai_to_ai.txt`.  
+The kit repository is not the host project.
+
+A deployed Signal Rail instance is not the same thing as the clean baseline repository.
+
+A folder marked as a deployed instance does not identify the host project by itself.
+
+Entry validity is closed in `00_runtime_entry.txt`.
+
+Execution behavior is governed in `06_ai_to_ai.txt`.
+
 If local tooling changes or disappears, the canonicals and the kernel should still remain readable and usable.
 
 </details>
