@@ -433,15 +433,12 @@ If local tooling changes or disappears, the canonicals and the kernel should sti
 
 ---
 
-<details>
-<summary><strong>🤝 Human + AI note</strong></summary>
+<strong>🤝 Human + AI note</strong>
 
 Signal Rail is a human-led project by **XxYouDeaDPunKxX**.
 
 Its concept, structure, behavioral logic, and final direction come from me.  
 AI was used as a working partner during development to help with drafting, rewriting, refinement, iteration speed, and support material.
-
-</details>
 
 ---
 
