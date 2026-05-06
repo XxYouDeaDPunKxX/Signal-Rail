@@ -12,7 +12,7 @@ The point is not to make a project smaller than it is.
 
 The point is to keep the material readable while the project grows, branches, changes shape, and comes back after interruption.
 
-## 🚀 Start here
+## 🗺️ Start here
 
 Project documentation usually breaks when everything lives in the same undifferentiated space.
 
